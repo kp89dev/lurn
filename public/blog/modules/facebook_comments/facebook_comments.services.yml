@@ -1,0 +1,4 @@
+services:
+  facebook_comments.enabler:
+    class: Drupal\facebook_comments\EnablerService
+    arguments: []

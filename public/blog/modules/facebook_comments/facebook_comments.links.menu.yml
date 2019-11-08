@@ -1,0 +1,5 @@
+facebook_comments.settings:
+  title: 'Facebook Comments Settings'
+  description: 'Configure Facebook comments settings like the Facebook App ID.'
+  route_name: facebook_comments.settings
+  parent: system.admin_config_content

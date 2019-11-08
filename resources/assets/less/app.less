@@ -1,0 +1,96 @@
+@import 'parts/variables';
+@import 'parts/defaults';
+@import 'parts/onboarding';
+
+@import 'parts/header';
+@import 'parts/sidebar';
+
+@import 'parts/modules';
+@import 'parts/courses';
+@import 'parts/course-onboarding';
+@import 'parts/lessons';
+@import 'parts/notes';
+
+@import 'parts/calendar';
+@import 'parts/cart';
+@import 'parts/news';
+@import 'parts/badges';
+@import 'parts/faq';
+@import 'parts/breadcrumbs';
+@import 'parts/thank-you';
+@import 'parts/sitemaps';
+@import 'parts/forum';
+@import 'parts/thumbs-up';
+@import 'parts/profile';
+
+@import 'parts/footer';
+
+body {
+  background-color: #e6eaf0;
+  font-family: Lato, sans-serif;
+  font-size: 16px;
+  color: #444;
+  font-weight: 300;
+}
+
+#content,
+.content-wrapper {
+  background-color: #f7f8fa;
+  font-weight: 400;
+
+  #main-message {
+    padding: 20px @padding;
+    margin-top: -@spacing;
+  }
+}
+
+.categories {
+  margin: @padding 0 @spacing;
+  padding: 0;
+  font-size: 0;
+  user-select: none;
+
+  li {
+    display: inline-block;
+    font-size: 16px;
+    padding: 5px @padding;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-top: 5px;
+    color: #777;
+
+    &:hover {
+      background-color: #fff;
+      color: #444;
+    }
+
+    &.active {
+      background-color: #508ffb;
+      color: #fff;
+      text-shadow: 0 1px 1px rgba(0, 0, 0, .1);
+    }
+  }
+}
+
+#merge-app {
+  .results {
+    background-color: #eff1f5 !important;
+    margin: @spacing -@spacing -@spacing;
+    border-radius: 0;
+    border: none;
+    border-top: 1px solid rgba(0, 0, 0, .03);
+    padding: @spacing @padding;
+
+    .title {
+      font-weight: bold;
+    }
+
+    ul {
+      padding: 0;
+
+      li {
+        display: block;
+      }
+    }
+  }
+}

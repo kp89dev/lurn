@@ -1,0 +1,31 @@
+server {
+  listen [::]:80 default_server;
+  listen 80 default_server;
+
+  # The host name to respond to
+  server_name "~^lurn-central\..+\.nip\.io";
+
+  # Path for static files
+  root /var/www/html/public;
+
+  # Specify a charset
+  charset utf-8;
+
+  # Custom 404 page
+  error_page 404 /404.html;
+
+  sendfile off;
+
+  location / {
+      try_files $uri /index.php?$query_string;
+  }
+
+  location ~* \.php$ {
+      try_files $uri /index.php =404;
+      fastcgi_split_path_info ^(.+\.php)(.*)$;
+      fastcgi_pass php-fpm:9000;
+      fastcgi_index index.php;
+      fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name;
+      include fastcgi_params;
+  }
+}

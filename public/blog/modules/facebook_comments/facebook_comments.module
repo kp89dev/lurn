@@ -1,0 +1,196 @@
+<?php
+/**
+ * @file
+ * Enables users to use Facebook comments on content.
+ */
+use Drupal\Core\Form\FormStateInterface;
+
+/**
+ * Implements hook_form_FORM_ID_alter() for 'field_config_edit_form'.
+ */
+function facebook_comments_form_field_config_edit_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $form_state) {
+  // We don't need the required field.
+  // We don't have default values to be set.
+  if ($form_state->getFormObject()->getEntity()->getType() == 'facebook_comments') {
+    $form['required']['#access'] = FALSE;
+    $form['default_value']['#access'] = FALSE;
+  }
+}
+
+/**
+ * Implements hook_form_FORM_ID_alter() for 'field_storage_config_edit_form'.
+ */
+function facebook_comments_form_field_storage_config_edit_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $form_state) {
+  if ($form_state->getFormObject()->getEntity()->getType() == 'facebook_comments') {
+    // We only support posting one comment at the time so it doesn't make sense
+    // to let the site builder choose anything else.
+    $form['cardinality_container']['cardinality']['#default_value'] = 1;
+    $form['cardinality_container']['#access'] = FALSE;
+    $form['facebook_comments'] = array(
+      '#markup' => t('There are no field settings. All configuration happens at the "Manage display" tab.'),
+    );
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function facebook_comments_theme($existing, $type, $theme, $path) {
+  return array(
+    'facebook_comments_block' => array(
+      'variables' => array(
+        'style' => 'light',
+        'amount' => 5,
+        'width' => 208,
+        'class' => '',
+        'url' => '',
+        'lang' => 'en_GB',
+      ),
+    ),
+    'facebook_comments_field' => array(
+      'variables' => array(
+        'style' => 'light',
+        'amount' => 15,
+        'width' => 620,
+        'class' => '',
+        'url' => '',
+        'lang' => 'en_GB',
+      ),
+    ),
+  );
+}
+
+/**
+ * Returns a Language code format pt_PT.
+ * If the current language code is not in the conversion array it returns
+ * English as default language.
+ */
+function _facebook_comments_get_language_code() {
+  $current_language = \Drupal::languageManager()->getCurrentLanguage()->getId();
+  // Get available languages.
+  $language_codes = _facebook_comments_get_language_codes();
+  $languages = array();
+  // Get available language codes.
+  if (array_key_exists($current_language, $language_codes)) {
+    $languages = $language_codes[$current_language];
+  }
+  else {
+    $languages = $language_codes['en'];
+  }
+  // Get the first elements key, for the available language codes.
+  reset($languages);
+  return key($languages);
+}
+
+/**
+ * Returns an array with the relation of the languages with its pt_PT code.
+ */
+function _facebook_comments_get_language_codes() {
+  return array(
+    'af' => array('af_ZA' => 'Afrikaans'),
+    'ar' => array('ar_AR' => 'Arabic'),
+    'ay' => array('ay_BO' => 'Aymara'),
+    'az' => array('az_AZ' => 'Azeri'),
+    'be' => array('be_BY' => 'Belarusian'),
+    'bg' => array('bg_BG' => 'Bulgarian'),
+    'bn' => array('bn_IN' => 'Bengali'),
+    'bs' => array('bs_BA' => 'Bosnian'),
+    'ca' => array('ca_ES' => 'Catalan'),
+    'ck' => array('ck_US' => 'Cherokee'),
+    'cs' => array('cs_CZ' => 'Czech'),
+    'cy' => array('cy_GB' => 'Welsh'),
+    'da' => array('da_DK' => 'Danish'),
+    'de' => array('de_DE' => 'German'),
+    'el' => array('el_GR' => 'Greek'),
+    'en' => array(
+      'en_GB' => 'English (UK)', 'en_PI' => 'English (Pirate)',
+      'en_UD' => 'English (Upside Down)',
+      'en_US' => 'English (US)'),
+    'eo' => array('eo_EO' => 'Esperanto'),
+    'es' => array(
+      'es_LA' => 'Spanish',
+      'es_CL' => 'Spanish (Chile)',
+      'es_CO' => 'Spanish (Colombia)',
+      'es_MX' => 'Spanish (Mexico)',
+      'es_VE' => 'Spanish (Venezuela)'),
+    'et' => array('et_EE' => 'Estonian'),
+    'eu' => array('eu_ES' => 'Basque'),
+    'fa' => array('fa_IR' => 'Persian'),
+    'fb' => array('fb_FI' => 'Finnish (test)', 'fb_LT' => 'Leet Speak'),
+    'fi' => array('fi_FI' => 'Finnish'),
+    'fo' => array('fo_FO' => 'Faroese'),
+    'fr' => array('fr_FR' => 'French (France)', 'fr_CA' => 'French (Canada)'),
+    'ga' => array('ga_IE' => 'Irish'),
+    'gl' => array('gl_ES' => 'Galician'),
+    'gn' => array('gn_PY' => 'Guarani'),
+    'gu' => array('gu_IN' => 'Gujarati'),
+    'he' => array('he_IL' => 'Hebrew'),
+    'hi' => array('hi_IN' => 'Hindi'),
+    'hr' => array('hr_HR' => 'Croatian'),
+    'hu' => array('hu_HU' => 'Hungarian'),
+    'hy' => array('hy_AM' => 'Armenian'),
+    'id' => array('id_ID' => 'Indonesian'),
+    'is' => array('is_IS' => 'Icelandic'),
+    'it' => array('it_IT' => 'Italian'),
+    'ja' => array('ja_JP' => 'Japanese'),
+    'jv' => array('jv_ID' => 'Javanese'),
+    'ka' => array('ka_GE' => 'Georgian'),
+    'kk' => array('kk_KZ' => 'Kazakh'),
+    'km' => array('km_KH' => 'Khmer'),
+    'kn' => array('kn_IN' => 'Kannada'),
+    'ko' => array('ko_KR' => 'Korean'),
+    'ku' => array('ku_TR' => 'Kurdish'),
+    'la' => array('la_VA' => 'Latin'),
+    'li' => array('li_NL' => 'Limburgish'),
+    'lt' => array('lt_LT' => 'Lithuanian'),
+    'lv' => array('lv_LV' => 'Latvian'),
+    'mg' => array('mg_MG' => 'Malagasy'),
+    'mk' => array('mk_MK' => 'Macedonian'),
+    'ml' => array('ml_IN' => 'Malayalam'),
+    'mn' => array('mn_MN' => 'Mongolian'),
+    'mr' => array('mr_IN' => 'Marathi'),
+    'ms' => array('ms_MY' => 'Malay'),
+    'mt' => array('mt_MT' => 'Maltese'),
+    'nb' => array('nb_NO' => 'Norwegian (bokmal)'),
+    'ne' => array('ne_NP' => 'Nepali'),
+    'nl' => array('nl_NL' => 'Dutch', 'nl_BE' => 'Dutch (Belgium)'),
+    'nn' => array('nn_NO' => 'Norwegian (nynorsk)'),
+    'pa' => array('pa_IN' => 'Punjabi'),
+    'pl' => array('pl_PL' => 'Polish'),
+    'ps' => array('ps_AF' => 'Pashto'),
+    'pt' => array('pt_BR' => 'Portuguese (Brazil)'),
+    'pt' => array('pt_PT' => 'Portuguese (Portugal)'),
+    'qu' => array('qu_PE' => 'Quechua'),
+    'rm' => array('rm_CH' => 'Romansh'),
+    'ro' => array('ro_RO' => 'Romanian'),
+    'ru' => array('ru_RU' => 'Russian'),
+    'sa' => array('sa_IN' => 'Sanskrit'),
+    'se' => array('se_NO' => 'Northern Sami'),
+    'sk' => array('sk_SK' => 'Slovak'),
+    'sl' => array('sl_SI' => 'Slovenian'),
+    'so' => array('so_SO' => 'Somali'),
+    'sq' => array('sq_AL' => 'Albanian'),
+    'sr' => array('sr_RS' => 'Serbian'),
+    'sv' => array('sv_SE' => 'Swedish'),
+    'sw' => array('sw_KE' => 'Swahili'),
+    'sy' => array('sy_SY' => 'Syriac'),
+    'ta' => array('ta_IN' => 'Tamil'),
+    'te' => array('te_IN' => 'Telugu'),
+    'tg' => array('tg_TJ' => 'Tajik'),
+    'th' => array('th_TH' => 'Thai'),
+    'tl' => array('tl_PH' => 'Filipino', 'tl_ST' => 'Klingon'),
+    'tr' => array('tr_TR' => 'Turkish'),
+    'tt' => array('tt_RU' => 'Tatar'),
+    'uk' => array('uk_UA' => 'Ukrainian'),
+    'ur' => array('ur_PK' => 'Urdu'),
+    'uz' => array('uz_UZ' => 'Uzbek'),
+    'vi' => array('vi_VN' => 'Vietnamese'),
+    'xh' => array('xh_ZA' => 'Xhosa'),
+    'yi' => array('yi_DE' => 'Yiddish'),
+    'zh' => array(
+      'zh_CN' => 'Simplified Chinese (China)',
+      'zh_HK' => 'Traditional Chinese (Hong Kong)',
+      'zh_TW' => 'Traditional Chinese (Taiwan)'),
+    'zu' => array('zu_ZA' => 'Zulu')
+  );
+}

@@ -1,0 +1,171 @@
+.box {
+  background-color: #fff;
+  padding: @more-spacing;
+
+  &.secondary {
+    background-color: @secondary-bg-color;
+  }
+
+  @media (max-width: 768px) {
+    padding: @spacing;
+  }
+
+  @media (max-width: 414px) {
+    padding: @spacing @padding;
+  }
+}
+
+.background-fade-container {
+  position: relative;
+  height: 550px;
+
+  .background-right,
+  .background-left {
+    background-size: cover;
+    width: 50%;
+    height: 550px;
+    position: absolute;
+    opacity: .6;
+  }
+
+  .background-right {
+    right: 0;
+  }
+
+  .background-left {
+    left: 0;
+    opacity: .75;
+  }
+
+  .fade-box-left,
+  .fade-box-right {
+    position: absolute;
+    width: 100%;
+    height: 550px;
+  }
+
+  .fade-box-left {
+    background: #f4f5f7;
+    background: -moz-linear-gradient(left, #f4f5f7 55%, rgba(0, 0, 0, 0) 75%);
+    background: -webkit-linear-gradient(left, #f4f5f7 55%, rgba(0, 0, 0, 0) 75%);
+    background: linear-gradient(to right, #f4f5f7 55%, rgba(0, 0, 0, 0) 75%);
+  }
+
+  .fade-box-right {
+    background: #3d444e;
+    background: -moz-linear-gradient(right, #3d444e 55%, rgba(0, 0, 0, 0) 75%);
+    background: -webkit-linear-gradient(right, #3d444e 55%, rgba(0, 0, 0, 0) 75%);
+    background: linear-gradient(to left, #3d444e 55%, rgba(0, 0, 0, 0) 75%);
+
+    .fade-box-content {
+      margin-left: 50%;
+      color: #fff;
+
+      h3 {
+        color: #fff;
+      }
+    }
+  }
+
+  .fade-box-content {
+    width: 50%;
+    padding: @more-spacing @more-spacing * 2;
+
+    h3 {
+      font-size: 2.65rem;
+      font-weight: 600;
+    }
+
+    p {
+      font-size: 1.35rem;
+      line-height: 2.5rem;
+      margin-bottom: 2.5rem;
+    }
+  }
+
+  @media (max-width: 1620px) {
+    .fade-box-content {
+      padding: @spacing*2 @more-spacing;
+    }
+  }
+  @media (max-width: 1100px) {
+    .fade-box-content {
+      padding: @spacing*2 @spacing;
+    }
+  }
+  
+  //@media (max-width: 768px) {
+  @media(max-width: 890px) {
+    text-align: center;
+
+    .fade-box-left,
+    .fade-box-right {
+      background: rgba(255, 255, 255, 0.75);
+      width: 100%;
+    }
+
+    .background-right,
+    .background-left {
+      width: 100%;
+    }
+
+    .fade-box-content {
+      color: @primary-text-color !important;
+      margin-left: 0 !important;
+      padding: @spacing;
+      width: 100%;
+
+      h3 span.accent {
+        display: block;
+      }
+
+      h3 {
+        color: @primary-text-color !important;;
+      }
+    }
+  }
+
+  @media (max-width: 414px) {
+    height: 680px;
+
+    .fade-box-left,
+    .fade-box-right,
+    .background-left,
+    .background-right {
+      height: 680px;
+    }
+  }
+}
+
+.tedx-video {
+  background-image: url(/images/anik-tedx-talk.jpg);
+  background-size: cover;
+  height: 700px;
+  padding: 0 !important;
+
+  .cover {
+    background: rgba(255, 255, 255, 0.45);
+    width: 100%;
+    height: 100%;
+  }
+
+  // @media (max-width: 1180px) {
+    background-position: 75% 50%;
+  // }
+}
+
+.career-video {
+  background-size: cover;
+  height: 700px;
+  padding: 0 !important;
+
+  .cover {
+    background: rgba(255, 255, 255, 0.45);
+    width: 100%;
+    height: 100%;
+  }
+
+  // @media (max-width: 1180px) {
+    background-position: 75% 50%;
+  // }
+}

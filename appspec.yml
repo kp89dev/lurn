@@ -1,0 +1,26 @@
+version: 0.0
+os: linux
+files:
+  - source: ./
+    destination: /var/www/lurn.com/release/
+permissions:
+  - object: /var/www/lurn.com/release
+    pattern: "**"
+    owner: www-data
+    group: www-data
+    type:
+      - directory
+      - file
+hooks:
+  BeforeInstall:
+    - location: deploy/.aws/before-install.sh
+      timeout: 60
+      runas: root
+  AfterInstall:
+    - location: deploy/.aws/after-install.sh
+      timeout: 60
+      runas: root
+  ApplicationStart:
+    - location: deploy/.aws/application-start.sh
+      timeout: 60
+      runas: root

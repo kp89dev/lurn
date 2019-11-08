@@ -1,0 +1,7 @@
+facebook_comments.settings:
+  path: 'admin/config/content/facebook-comments'
+  defaults:
+    _form: '\Drupal\facebook_comments\Form\FacebookCommentsSettingsForm'
+    _title: 'Facebook comments settings'
+  requirements:
+    _permission: 'administer facebook comments'

@@ -1,0 +1,228 @@
+#sidebar {
+  background-color: #eff1f5;
+  width: 330px;
+  user-select: none;
+
+  .widget {
+    margin: @padding 0;
+
+    &.tools {
+      font-weight: normal;
+
+      ul {
+        margin: 0;
+        padding: 0;
+
+        li {
+          display: block;
+
+          a {
+            display: block;
+            padding: 10px 10px 10px 37px;
+            border-bottom: 1px solid rgba(0, 0, 0, .05);
+            color: #555;
+            transition: all .2s;
+            position: relative;
+            cursor: pointer;
+
+            &:hover {
+              background-color: rgba(255, 255, 255, .3);
+              color: #3c6fcb;
+
+              i.icon {
+                color: #666;
+              }
+            }
+
+            i.icon {
+              color: #bbb;
+              transition: all .2s;
+              position: absolute;
+              top: 10px;
+              left: 10px;
+            }
+          }
+
+          &:last-child a {
+            border-bottom: none;
+          }
+        }
+      }
+    }
+
+    .user-dash-ad {
+      img.hover {
+        display: none;
+      }
+
+      &:hover {
+        img.hover {
+          display: block;
+        }
+
+        img.primary {
+          display: none;
+        }
+      }
+    }
+  }
+
+  .courses {
+    padding-right: 0;
+
+    .course {
+      margin-bottom: @spacing;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  .badges {
+    margin-left: -5px;
+    margin-right: -5px;
+    font-size: 0;
+    text-align: center;
+
+    .badge {
+      display: inline-block;
+      width: 33.33333%;
+      max-width: 33.33333%;
+      padding-left: 5px;
+      padding-right: 5px;
+
+      .acquired {
+        position: relative;
+        left: 0;
+        top: 0;
+        width: 100%;
+        max-width: inherit;
+        height: 100%;
+
+        .checkmark {
+          z-index: 2;
+          position: absolute;
+          top: 0;
+          left: 0;
+
+          i.icon {
+            position: relative;
+            left: 15px;
+            top: 20px;
+            font-size: 54px;
+            line-height: 54px;
+            color: greenyellow;
+            opacity: 0.6;
+          }
+        }
+      }
+    }
+  }
+
+  #news {
+    ul {
+      margin: -@padding;
+      padding: 0;
+
+      li {
+        display: block;
+        font-size: 15px;
+        color: #ccc;
+        font-weight: normal;
+        border-bottom: 1px solid rgba(0, 0, 0, .04);
+
+        a {
+          display: block;
+          padding: 10px @padding;
+
+          &:hover {
+            background-color: rgba(0, 0, 0, .02);
+
+            &:after {
+              content: '\f0c1';
+              font-family: Icons;
+              margin-left: 7px;
+              color: #cdd3da;
+              position: absolute;
+            }
+          }
+
+          &:before {
+            content: '\f1ea';
+            font-family: Icons;
+            margin-right: 8px;
+            color: #cdd3da;
+          }
+        }
+      }
+    }
+  }
+
+  #continue-course {
+    background: #224b83 linear-gradient(-45deg, #3268b5 0%, #1754a8 100%);
+    border-radius: 4px;
+    color: #fff;
+    margin-top: -@spacing;
+    margin-bottom: 20px;
+
+    .progress-bar {
+      background-color: #1a3964;
+
+      .bar {
+        background-color: #fff;
+        text-align: right;
+        height: 2px;
+
+        span {
+          background-color: #fff;
+          color: #224b83;
+          text-shadow: none;
+        }
+      }
+    }
+
+    .title {
+      line-height: 32px;
+      max-height: 64px;
+      overflow: hidden;
+      margin-bottom: 10px;
+    }
+
+    .cta {
+      text-align: center;
+      padding-top: @padding;
+    }
+  }
+}
+
+.fw-normal {
+  font-weight: normal;
+}
+
+.sidebar-events {
+  margin: 0;
+  padding: 0;
+
+  li {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 14px;
+  }
+
+  span {
+    &.date {
+      display: inline-block;
+      background-color: #e3e6ec;
+      font-size: 12px;
+      padding: 0 5px;
+      border-radius: 2px;
+      margin-right: 3px;
+      float: left;
+    }
+
+    &.title {
+      font-weight: normal;
+    }
+  }
+}

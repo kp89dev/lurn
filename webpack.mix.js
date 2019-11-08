@@ -1,0 +1,33 @@
+const { mix } = require('laravel-mix');
+
+mix
+    .js('resources/assets/js/dynamic-modal.js', 'public/js')
+    .js('resources/assets/js/dashboard.js', 'public/js')
+    .js('resources/assets/js/workflow/workflow.js', 'public/js')
+    .js('resources/assets/js/feedback.js', 'public/js')
+    .js('resources/assets/js/calendar.js', 'public/js')
+    .js('resources/assets/js/countdown.js', 'public/js')
+    .js('resources/assets/js/helpers.js', 'public/js')
+    .js('resources/assets/js/support.js', 'public/js')
+    .js('resources/assets/js/lesson.js', 'public/js')
+    .js('resources/assets/js/header.js', 'public/js')
+    .js('resources/assets/js/track.js', 'public/js')
+    .js('resources/assets/js/push-notification.js', 'public/js')
+    .js('resources/assets/js/tracker.js', 'public/js')
+    .js('resources/assets/js/forum.js', 'public/js')
+    .js('resources/assets/js/profile.js', 'public/js')
+    .js('resources/assets/js/thumbs-up.js', 'public/js')
+    .js('resources/assets/js/home.js', 'public/js')
+    .js('resources/assets/js/onboarding/popup.js', 'public/js/onboarding')
+    .js('resources/assets/js/global.js', 'public/js')
+    .js('resources/assets/js/surveys.js', 'public/js')
+    .js('resources/assets/js/admin/surveys.js', 'public/js/admin')
+    .js('resources/assets/js/admin/survey-results.js', 'public/js/admin')
+    .js(['resources/assets/js/niche-detective/jvectormap.js',
+        'resources/assets/js/niche-detective/world-map-vector.js'], 'public/js/niche-detective/libs.js')
+    .js(['resources/assets/js/niche-detective/nichetool.js'], 'public/js/niche-detective')
+    .less('resources/assets/less/workflows.less', 'public/css')
+    .less('resources/assets/less/app.less', 'public/css')
+    .less('resources/assets/less/home.less', 'public/css')
+    .styles(['resources/assets/css/niche.css'], 'public/css/niche.css')
+    .version();

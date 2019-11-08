@@ -1,0 +1,6 @@
+drupal.fb_likebox:
+  version: VERSION
+  js:
+    fb_likebox.js: {}
+  dependencies:
+    - core/drupal

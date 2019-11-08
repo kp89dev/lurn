@@ -1,0 +1,148 @@
+#outreach-page {
+    
+    .wide-wrapper {
+        &.card {
+            background: @primary-bg-color;
+            border-radius: 6px;
+            box-shadow: 0 0 32px -10px rgba(0, 0, 0, 0.25);
+            overflow: hidden;
+
+            ul.outreach{
+                list-style-type: none;
+                text-align: left;
+                padding-left: 0;
+
+                li {
+                    position: relative;
+                    padding: 0 0 14px 36px;
+                    margin-bottom: 14px;
+                    border-bottom: dashed 1px #ccc;
+                    font-size: 1.6rem;
+
+                    &:last-of-type {
+                        border-bottom: none;
+                    }
+
+                    &:before {
+                        position: absolute;
+                        content: "\f00c";
+                        font-family: FontAwesome;
+                        font-size: 2.4rem;
+                        color: #16a085;
+                        top: 0.5rem;
+                        left:0;
+                    }
+                }
+            }
+
+            p {
+                font-size: 1.4rem;
+            }
+
+            .optin {
+                border: dashed 1px #fff;
+                background: @outreach-color;
+                border-radius: 10px;
+                margin-bottom: 6px;
+                font-size: 1.2rem;
+
+                h4 {
+                    padding: 10px 20px;
+                    font-size: 1.4rem;
+                    line-height: 1.8rem;
+                    color: #fff;
+                }
+
+                input[type="text"] {
+                    max-width: 300px;
+                    height: 50px;
+                    background-color: #fff;
+                    text-align: center;
+                    font-size: 1.6rem;
+                    margin: 0 auto 6px;
+                    width: 90%;
+                    border: 1px solid #111;
+                    border-radius: 10px;
+                }
+
+                input[type="submit"] {
+                    line-height: 52px;
+                    width: auto;
+                    height: auto;
+                    cursor: pointer;
+                    font-size: 2.0rem;
+                    font-weight: 800;
+                    text-align: center;
+                    color: #0d244d;
+                    text-shadow: #fff 1px 2px 3px;
+                    padding: 0 20px;
+                    letter-spacing: -1px;
+                    border: solid 1px #ffbe24;
+                    outline: none;
+                    vertical-align: top;
+                    border-radius: 6px;
+                    background: -webkit-linear-gradient(#fffc01, #ffba00);
+                    background: -o-linear-gradient(#fffc01, #ffba00);
+                    background: -moz-linear-gradient(#fffc01, #ffba00);
+                    background: linear-gradient(#fffc01, #ffba00);
+                    text-transform: uppercase;
+                    margin: 6px 0 15px;
+                }
+            }
+        }
+    }
+    
+    #forallourgood-logo {
+        float: right;
+    }
+
+    h1.title {
+        font-size: 4rem;
+    }
+
+    h2.intro {
+        font-weight: 400;
+        font-size: 2.7rem;
+    }
+  
+    .background-fade-container {
+        height: 240px;
+        
+        .background-left {
+            height: 240px;
+            left: 0px;
+            opacity: 1;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: top center;
+            background-color: @outreach-color;
+        }
+        
+        .fade-box-right {
+            height: 240px;
+            background: @outreach-color;
+            background: -moz-linear-gradient(right, @outreach-color 55%, rgba(0, 0, 0, 0) 75%);
+            background: -webkit-linear-gradient(right, @outreach-color 55%, rgba(0, 0, 0, 0) 75%);
+            background: linear-gradient(to left, @outreach-color 55%, rgba(0, 0, 0, 0) 75%);
+            
+            .fade-box-content {
+                padding: 30px 120px;
+                color: #fff;
+                
+                h2 {
+                    color: #fff;
+                }
+                
+                p {
+                    float: right;
+                }
+            }
+        }
+    }
+    
+    .arrow-box {
+        background-image: url('/images/con-arrow-alt.png');
+        background-position: top center;
+        background-repeat: no-repeat;
+    }
+}

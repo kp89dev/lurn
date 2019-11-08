@@ -1,0 +1,36 @@
+<?php
+
+/**
+ * @file
+ * Contains social_media.module..
+ */
+
+
+/**
+ * Implements hook_theme().
+ */
+function social_media_theme($existing, $type, $theme, $path) {
+  return array(
+    'social_media_links' => array(
+      'variables' => array(
+        'elements' => NULL,
+      ),
+      'template' => 'social-media-links',
+    )
+  );
+}
+
+/**
+ * Implements hook_mail().
+ */
+function social_media_mail($key, &$message, $params) {
+
+  switch ($key) {
+    case 'forward_email':
+      $message['from'] = \Drupal::config('system.site')->get('mail');
+      $message['headers']['Content-Type'] = 'text/html; charset=UTF-8; format=flowed; delsp=yes';
+      $message['subject'] = $params['subject'];
+      $message['body'][] = $params['message'];
+      break;
+  }
+}

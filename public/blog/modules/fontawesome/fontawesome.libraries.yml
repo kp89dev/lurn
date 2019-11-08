@@ -1,0 +1,16 @@
+fontawesome:
+  remote: http://fontawesome.io/assets/font-awesome-4.7.0.zip
+  license:
+    name: MIT
+    url: http://fontawesome.io/license/
+    gpl-compatible: true
+  version: 4.7.0
+  css:
+    theme:
+      /libraries/fontawesome/css/font-awesome.min.css: {minified: true }
+
+fontawesome.cdn:
+  version: 4.7.0
+  css:
+    theme:
+      //maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css: { type: external, minified: true }

@@ -1,0 +1,10 @@
+drupal.poll-links:
+  version: VERSION
+  css:
+    component:
+      css/poll.base.css: {}
+      css/poll.theme.css: {}
+
+admin:
+  js:
+      js/poll.admin.js: {}

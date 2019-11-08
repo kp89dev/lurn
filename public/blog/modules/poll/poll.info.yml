@@ -1,0 +1,17 @@
+name: Poll
+type: module
+# core: 8.x
+description: 'Allows your site to capture votes on different topics in the form of multiple choice questions.'
+package: Other
+dependencies:
+  - drupal:field
+  - drupal:node
+  - drupal:options
+  - drupal:views
+  - drupal:user
+
+# Information added by Drupal.org packaging script on 2017-02-13
+version: '8.x-1.1'
+core: '8.x'
+project: 'poll'
+datestamp: 1487027897

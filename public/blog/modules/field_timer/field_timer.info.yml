@@ -1,0 +1,13 @@
+name: Field Timer
+type: module
+description: Provides a datetime field formatter to display the field as timer or countdown.
+package: Fields
+# core: 8.x
+dependecies:
+ - datetime
+
+# Information added by Drupal.org packaging script on 2017-06-04
+version: '8.x-1.0'
+core: '8.x'
+project: 'field_timer'
+datestamp: 1496600649

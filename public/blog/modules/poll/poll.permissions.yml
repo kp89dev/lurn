@@ -1,0 +1,6 @@
+administer polls:
+  title: 'Administer polls'
+access polls:
+  title: 'View polls'
+cancel own vote:
+  title: 'Cancel own vote'

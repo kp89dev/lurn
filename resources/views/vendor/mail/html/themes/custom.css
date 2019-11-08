@@ -1,0 +1,292 @@
+/* Base */
+
+*{
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;   
+}
+
+html{
+    width: 100%;
+    background-color: #ffffff;
+}
+
+body {
+    background-color: #FFFFFF;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    width: 100% !important;
+    -webkit-font-smoothing: antialiased;
+}
+
+div,
+p,
+a,
+li,
+td {
+    -webkit-text-size-adjust: none; 
+}
+
+.hover:hover {
+    opacity:0.85;
+    filter:alpha(opacity=85);
+}
+
+.bg-white {
+    background-color: rgb(255, 255, 255);
+}
+
+/* Typography */
+
+@font-face {
+    font-family: 'proxima_novalight';
+    src: url('http://rocketway.net/themebuilder/template/templates/titan/font/proximanova-light-webfont.eot');
+    src: url('http://rocketway.net/themebuilder/template/templates/titan/font/proximanova-light-webfont.eot?#iefix') format('embedded-opentype'),url('http://rocketway.net/themebuilder/template/templates/titan/font/proximanova-light-webfont.woff') format('woff'),url('http://rocketway.net/themebuilder/template/templates/titan/font/proximanova-light-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'proxima_nova_rgregular';
+    src: url('http://rocketway.net/themebuilder/template/templates/titan/font/proximanova-regular-webfont.eot');
+    src: url('http://rocketway.net/themebuilder/template/templates/titan/font/proximanova-regular-webfont.eot?#iefix') format('embedded-opentype'),url('http://rocketway.net/themebuilder/template/templates/titan/font/proximanova-regular-webfont.woff') format('woff'),url('http://rocketway.net/themebuilder/template/templates/titan/font/proximanova-regular-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'proxima_novasemibold';
+    src: url('http://rocketway.net/themebuilder/template/templates/titan/font/proximanova-semibold-webfont.eot');
+    src: url('http://rocketway.net/themebuilder/template/templates/titan/font/proximanova-semibold-webfont.eot?#iefix') format('embedded-opentype'),url('http://rocketway.net/themebuilder/template/templates/titan/font/proximanova-semibold-webfont.woff') format('woff'),url('http://rocketway.net/themebuilder/template/templates/titan/font/proximanova-semibold-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+    
+@font-face {
+    font-family: 'proxima_nova_rgbold';
+    src: url('http://rocketway.net/themebuilder/template/templates/titan/font/proximanova-bold-webfont.eot');
+    src: url('http://rocketway.net/themebuilder/template/templates/titan/font/proximanova-bold-webfont.eot?#iefix') format('embedded-opentype'),url('http://rocketway.net/themebuilder/template/templates/titan/font/proximanova-bold-webfont.woff') format('woff'),url('http://rocketway.net/themebuilder/template/templates/titan/font/proximanova-bold-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+    
+@font-face {
+    font-family: 'proxima_novablack';
+    src: url('http://rocketway.net/themebuilder/template/templates/titan/font/proximanova-black-webfont.eot');
+    src: url('http://rocketway.net/themebuilder/template/templates/titan/font/proximanova-black-webfont.eot?#iefix') format('embedded-opentype'),url('http://rocketway.net/themebuilder/template/templates/titan/font/proximanova-black-webfont.woff') format('woff'),url('http://rocketway.net/themebuilder/template/templates/titan/font/proximanova-black-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+    
+@font-face {
+    font-family: 'proxima_novathin';
+    src: url('http://rocketway.net/themebuilder/template/templates/mason/font/proximanova-thin-webfont.eot');
+    src: url('http://rocketway.net/themebuilder/template/templates/mason/font/proximanova-thin-webfont.eot?#iefix') format('embedded-opentype'),url('http://rocketway.net/themebuilder/template/templates/mason/font/proximanova-thin-webfont.woff') format('woff'),url('http://rocketway.net/themebuilder/template/templates/mason/font/proximanova-thin-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+p.sub {
+    font-size: 12px;
+}
+
+/* images */
+
+.image77 img {
+    width: 77px; 
+    height: auto;
+}
+
+.avatar125 img {
+    width: 125px; 
+    height: auto;
+}
+
+.icon61 img {
+    width: 61px;
+    height: auto;
+}
+
+.logo img {
+    width: 75px;
+    height: auto;
+}
+
+.icon18 img {
+    width: 18px;
+    height: auto;
+}
+
+/* Subcopy */
+
+.subcopy {
+    border-top: 1px solid #EDEFF2;
+    margin-top: 25px;
+    padding-top: 25px;
+}
+
+.subcopy p {
+    font-size: 12px;
+}
+
+/* Footer */
+
+.footer {
+    margin: 0 auto;
+    padding: 0;
+    text-align: center;
+    width: 570px;
+    -premailer-cellpadding: 0;
+    -premailer-cellspacing: 0;
+    -premailer-width: 570px;
+}
+
+.footer p {
+    color: #AEAEAE;
+    font-size: 12px;
+    text-align: center;
+}
+
+/* Tables */
+
+table.wrapper {
+    background-color: rgb(48, 48, 48);
+}
+
+table.wrapper tr td {
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;   
+}
+
+table.header-wrap {
+    background-color: #224b83;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+table.header-inner {
+    border-collapse:collapse;
+    text-align: center;
+    mso-table-lspace:0pt;
+    mso-table-rspace:0pt
+}
+
+table.content-wrap {
+    -webkit-border-bottom-left-radius: 5px;
+    -moz-border-bottom-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    -webkit-border-bottom-right-radius: 5px;
+    -moz-border-bottom-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+table.content-wrap td.content-wrap-cell {
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background-color: rgb(255, 255, 255);
+}
+table.fullCenter2 {
+    border-collapse:collapse;
+    text-align: center;
+    mso-table-lspace:0pt;
+    mso-table-rspace:0pt;
+}
+
+table.fullCenter2 td.intro {
+    color: rgb(255, 255, 255);
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 26px;
+    font-weight: 100;
+    line-height: 30px;
+    text-align: center;
+}
+
+table.fullCenter2 td.greeting {
+    color: rgb(63, 67, 69);
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 23px;
+    font-weight: 100;
+    line-height: 30px;
+    text-align: left;
+}
+
+table.fullCenter2 td.message {
+    color: rgb(63, 67, 69);
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    text-align: left;
+}
+
+table.content-closer {
+    background-color: rgb(255, 255, 255);
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+table.content-closer td.inner-wrap {
+    -webkit-border-bottom-left-radius: 5px;
+    -moz-border-bottom-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    -webkit-border-bottom-right-radius: 5px;
+    -moz-border-bottom-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+table.content-closer table.content-closer-inner {
+    border-collapse:collapse;
+    text-align: center;
+    mso-table-lspace:0pt;
+    mso-table-rspace:0pt;
+}
+
+table.subcopy-wrap {
+    
+}
+
+table.subcopy-wrap td.subcopy {
+    color: rgb(255, 255, 255);
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 13px;
+    font-style: italic;
+    line-height: 24px;
+    text-align: left;
+}
+
+/* Buttons */
+
+.action {
+    margin: 30px auto;
+    padding: 0;
+    text-align: center;
+    width: 100%;
+    -premailer-cellpadding: 0;
+    -premailer-cellspacing: 0;
+    -premailer-width: 100%;
+}
+
+.button {
+    border-radius: 3px;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.16);
+    color: #FFF;
+    display: inline-block;
+    text-decoration: none;
+    -webkit-text-size-adjust: none;
+}
+
+.button-blue {
+    background-color: #3097D1;
+    border-top: 10px solid #3097D1;
+    border-right: 18px solid #3097D1;
+    border-bottom: 10px solid #3097D1;
+    border-left: 18px solid #3097D1;
+}

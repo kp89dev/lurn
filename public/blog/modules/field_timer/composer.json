@@ -1,0 +1,6 @@
+{
+  "name": "drupal/field_timer",
+  "description": "Provides a datetime field formatter to display the field as timer or countdown.",
+  "type": "drupal-module",
+  "license": "GPL-2.0+"
+}

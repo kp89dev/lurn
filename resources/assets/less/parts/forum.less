@@ -1,0 +1,45 @@
+#forum {
+    background-color: #fff;
+    padding: @padding;
+    box-shadow: 0 6px 12px 3px rgba(0, 0, 0, .1), 0 3px 3px 0 rgba(0, 0, 0, .05);
+    font-weight: normal;
+    
+    .title {
+
+    }
+
+    iframe {
+        background: #ecedef;
+        margin: auto auto 20px;
+        border: 5px solid #ecedef;
+        width: 100%;
+    }
+
+    h3 {
+        background: #ededed none repeat scroll 0 0;
+        color: #284a5d;
+        margin-bottom: 0;
+        padding: 8px;
+        text-align: left;
+    }
+
+    ul {
+        padding: 12px 0;
+        margin: 0 0 15px;
+        list-style-type: none;
+        border: 1px solid #ededed;
+
+        li {
+            border-bottom: 1px dashed #ededed;
+            padding: 15px;
+            font-family: Roboto, sans-serif;
+
+            &:nth-child(odd){
+                background: #ededed none repeat scroll 0 0;
+            }
+        }
+    }
+    .actions {
+        margin-bottom: @padding;
+    }
+}

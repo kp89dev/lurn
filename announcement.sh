@@ -1,0 +1,1 @@
+curl -X POST -H 'Content-type: application/json' --data '{"text":"New release available for deployment. <https://console.aws.amazon.com/codedeploy/home?region=us-east-1#/deployments/new|Click here> to deploy."}' https://hooks.slack.com/services/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

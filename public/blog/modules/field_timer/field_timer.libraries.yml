@@ -1,0 +1,730 @@
+init:
+  version: VERSION
+  js:
+    js/field_timer.js: {}
+  dependencies:
+    - core/jquery
+    - core/drupal
+    - core/drupalSettings
+    - core/jquery.once
+  css:
+    component:
+      css/field_timer.css: {}
+
+county:
+  remote: http://www.egrappler.com/free-jquery-count-down-plugin-county/
+  version: 1.0
+  license:
+    name: GPL
+    url: http://egrappler.com/license/
+  js:
+    /libraries/county/js/county.js: {}
+  css:
+    component:
+      /libraries/county/css/county.css: {}
+  dependencies:
+    - core/jquery
+
+jquery.countdown:
+  remote: http://keith-wood.name/countdown.html
+  version: 2.1.0
+  license:
+    name: MIT
+    url: http://keith-wood.name/licence.html
+    gpl-compatible: true
+  js:
+    /libraries/jquery.countdown/js/jquery.plugin.min.js: { minified: true }
+    /libraries/jquery.countdown/js/jquery.countdown.min.js: { minified: true }
+  css:
+    component:
+      /libraries/jquery.countdown/css/jquery.countdown.css: {}
+  dependencies:
+    - core/jquery
+
+# Albanian
+jquery.countdown.sq:
+  remote: http://keith-wood.name/countdown.html
+  version: 2.1.0
+  license:
+    name: MIT
+    url: http://keith-wood.name/licence.html
+    gpl-compatible: true
+  js:
+    /libraries/jquery.countdown/js/jquery.countdown-sq.js: { minified: false }
+  dependencies:
+    - core/jquery.countdown
+
+# Arabic
+jquery.countdown.ar:
+  remote: http://keith-wood.name/countdown.html
+  version: 2.1.0
+  license:
+    name: MIT
+    url: http://keith-wood.name/licence.html
+    gpl-compatible: true
+  js:
+    /libraries/jquery.countdown/js/jquery.countdown-ar.js: { minified: false }
+  dependencies:
+    - core/jquery.countdown
+
+# Armenian
+jquery.countdown.hy:
+  remote: http://keith-wood.name/countdown.html
+  version: 2.1.0
+  license:
+    name: MIT
+    url: http://keith-wood.name/licence.html
+    gpl-compatible: true
+  js:
+    /libraries/jquery.countdown/js/jquery.countdown-hy.js: { minified: false }
+  dependencies:
+    - core/jquery.countdown
+
+# Bengali/Bangla
+jquery.countdown.bn:
+  remote: http://keith-wood.name/countdown.html
+  version: 2.1.0
+  license:
+    name: MIT
+    url: http://keith-wood.name/licence.html
+    gpl-compatible: true
+  js:
+    /libraries/jquery.countdown/js/jquery.countdown-bn.js: { minified: false }
+  dependencies:
+    - core/jquery.countdown
+
+# Bosnian
+jquery.countdown.bs:
+  remote: http://keith-wood.name/countdown.html
+  version: 2.1.0
+  license:
+    name: MIT
+    url: http://keith-wood.name/licence.html
+    gpl-compatible: true
+  js:
+    /libraries/jquery.countdown/js/jquery.countdown-bs.js: { minified: false }
+  dependencies:
+    - core/jquery.countdown
+
+# Bulgarian
+jquery.countdown.bg:
+  remote: http://keith-wood.name/countdown.html
+  version: 2.1.0
+  license:
+    name: MIT
+    url: http://keith-wood.name/licence.html
+    gpl-compatible: true
+  js:
+    /libraries/jquery.countdown/js/jquery.countdown-bg.js: { minified: false }
+  dependencies:
+    - core/jquery.countdown
+
+# Burmese
+jquery.countdown.my:
+  remote: http://keith-wood.name/countdown.html
+  version: 2.1.0
+  license:
+    name: MIT
+    url: http://keith-wood.name/licence.html
+    gpl-compatible: true
+  js:
+    /libraries/jquery.countdown/js/jquery.countdown-my.js: { minified: false }
+  dependencies:
+    - core/jquery.countdown
+
+# Catalan
+jquery.countdown.ca:
+  remote: http://keith-wood.name/countdown.html
+  version: 2.1.0
+  license:
+    name: MIT
+    url: http://keith-wood.name/licence.html
+    gpl-compatible: true
+  js:
+    /libraries/jquery.countdown/js/jquery.countdown-ca.js: { minified: false }
+  dependencies:
+    - core/jquery.countdown
+
+# Chinese/Simplified
+jquery.countdown.zh-CN:
+  remote: http://keith-wood.name/countdown.html
+  version: 2.1.0
+  license:
+    name: MIT
+    url: http://keith-wood.name/licence.html
+    gpl-compatible: true
+  js:
+    /libraries/jquery.countdown/js/jquery.countdown-zh-CN.js: { minified: false }
+  dependencies:
+    - core/jquery.countdown
+
+# Chinese/Traditional
+jquery.countdown.zh-TW:
+  remote: http://keith-wood.name/countdown.html
+  version: 2.1.0
+  license:
+    name: MIT
+    url: http://keith-wood.name/licence.html
+    gpl-compatible: true
+  js:
+    /libraries/jquery.countdown/js/jquery.countdown-zh-TW.js: { minified: false }
+  dependencies:
+    - core/jquery.countdown
+
+# Croatian
+jquery.countdown.hr:
+  remote: http://keith-wood.name/countdown.html
+  version: 2.1.0
+  license:
+    name: MIT
+    url: http://keith-wood.name/licence.html
+    gpl-compatible: true
+  js:
+    /libraries/jquery.countdown/js/jquery.countdown-hr.js: { minified: false }
+  dependencies:
+    - core/jquery.countdown
+
+# Czech
+jquery.countdown.cs:
+  remote: http://keith-wood.name/countdown.html
+  version: 2.1.0
+  license:
+    name: MIT
+    url: http://keith-wood.name/licence.html
+    gpl-compatible: true
+  js:
+    /libraries/jquery.countdown/js/jquery.countdown-cs.js: { minified: false }
+  dependencies:
+    - core/jquery.countdown
+
+# Danish
+jquery.countdown.da:
+  remote: http://keith-wood.name/countdown.html
+  version: 2.1.0
+  license:
+    name: MIT
+    url: http://keith-wood.name/licence.html
+    gpl-compatible: true
+  js:
+    /libraries/jquery.countdown/js/jquery.countdown-da.js: { minified: false }
+  dependencies:
+    - core/jquery.countdown
+
+# Dutch
+jquery.countdown.nl:
+  remote: http://keith-wood.name/countdown.html
+  version: 2.1.0
+  license:
+    name: MIT
+    url: http://keith-wood.name/licence.html
+    gpl-compatible: true
+  js:
+    /libraries/jquery.countdown/js/jquery.countdown-nl.js: { minified: false }
+  dependencies:
+    - core/jquery.countdown
+
+# Estonian
+jquery.countdown.et:
+  remote: http://keith-wood.name/countdown.html
+  version: 2.1.0
+  license:
+    name: MIT
+    url: http://keith-wood.name/licence.html
+    gpl-compatible: true
+  js:
+    /libraries/jquery.countdown/js/jquery.countdown-et.js: { minified: false }
+  dependencies:
+    - core/jquery.countdown
+
+# Farsi/Persian
+jquery.countdown.fa:
+  remote: http://keith-wood.name/countdown.html
+  version: 2.1.0
+  license:
+    name: MIT
+    url: http://keith-wood.name/licence.html
+    gpl-compatible: true
+  js:
+    /libraries/jquery.countdown/js/jquery.countdown-fa.js: { minified: false }
+  dependencies:
+    - core/jquery.countdown
+
+# Finnish
+jquery.countdown.fi:
+  remote: http://keith-wood.name/countdown.html
+  version: 2.1.0
+  license:
+    name: MIT
+    url: http://keith-wood.name/licence.html
+    gpl-compatible: true
+  js:
+    /libraries/jquery.countdown/js/jquery.countdown-fi.js: { minified: false }
+  dependencies:
+    - core/jquery.countdown
+
+# Faroese
+jquery.countdown.fo:
+  remote: http://keith-wood.name/countdown.html
+  version: 2.1.0
+  license:
+    name: MIT
+    url: http://keith-wood.name/licence.html
+    gpl-compatible: true
+  js:
+    /libraries/jquery.countdown/js/jquery.countdown-fo.js: { minified: false }
+  dependencies:
+    - core/jquery.countdown
+
+# French
+jquery.countdown.fr:
+  remote: http://keith-wood.name/countdown.html
+  version: 2.1.0
+  license:
+    name: MIT
+    url: http://keith-wood.name/licence.html
+    gpl-compatible: true
+  js:
+    /libraries/jquery.countdown/js/jquery.countdown-fr.js: { minified: false }
+  dependencies:
+    - core/jquery.countdown
+
+# Galician
+jquery.countdown.gl:
+  remote: http://keith-wood.name/countdown.html
+  version: 2.1.0
+  license:
+    name: MIT
+    url: http://keith-wood.name/licence.html
+    gpl-compatible: true
+  js:
+    /libraries/jquery.countdown/js/jquery.countdown-gl.js: { minified: false }
+  dependencies:
+    - core/jquery.countdown
+
+# German
+jquery.countdown.de:
+  remote: http://keith-wood.name/countdown.html
+  version: 2.1.0
+  license:
+    name: MIT
+    url: http://keith-wood.name/licence.html
+    gpl-compatible: true
+  js:
+    /libraries/jquery.countdown/js/jquery.countdown-de.js: { minified: false }
+  dependencies:
+    - core/jquery.countdown
+
+# Greek
+jquery.countdown.el:
+  remote: http://keith-wood.name/countdown.html
+  version: 2.1.0
+  license:
+    name: MIT
+    url: http://keith-wood.name/licence.html
+    gpl-compatible: true
+  js:
+    /libraries/jquery.countdown/js/jquery.countdown-el.js: { minified: false }
+  dependencies:
+    - core/jquery.countdown
+
+# Gujarati
+jquery.countdown.gu:
+  remote: http://keith-wood.name/countdown.html
+  version: 2.1.0
+  license:
+    name: MIT
+    url: http://keith-wood.name/licence.html
+    gpl-compatible: true
+  js:
+    /libraries/jquery.countdown/js/jquery.countdown-gu.js: { minified: false }
+  dependencies:
+    - core/jquery.countdown
+
+# Hebrew
+jquery.countdown.he:
+  remote: http://keith-wood.name/countdown.html
+  version: 2.1.0
+  license:
+    name: MIT
+    url: http://keith-wood.name/licence.html
+    gpl-compatible: true
+  js:
+    /libraries/jquery.countdown/js/jquery.countdown-he.js: { minified: false }
+  dependencies:
+    - core/jquery.countdown
+
+# Hungarian
+jquery.countdown.hu:
+  remote: http://keith-wood.name/countdown.html
+  version: 2.1.0
+  license:
+    name: MIT
+    url: http://keith-wood.name/licence.html
+    gpl-compatible: true
+  js:
+    /libraries/jquery.countdown/js/jquery.countdown-hu.js: { minified: false }
+  dependencies:
+    - core/jquery.countdown
+
+# Indonesian
+jquery.countdown.id:
+  remote: http://keith-wood.name/countdown.html
+  version: 2.1.0
+  license:
+    name: MIT
+    url: http://keith-wood.name/licence.html
+    gpl-compatible: true
+  js:
+    /libraries/jquery.countdown/js/jquery.countdown-id.js: { minified: false }
+  dependencies:
+    - core/jquery.countdown
+
+# Icelandic
+jquery.countdown.is:
+  remote: http://keith-wood.name/countdown.html
+  version: 2.1.0
+  license:
+    name: MIT
+    url: http://keith-wood.name/licence.html
+    gpl-compatible: true
+  js:
+    /libraries/jquery.countdown/js/jquery.countdown-is.js: { minified: false }
+  dependencies:
+    - core/jquery.countdown
+
+# Italian
+jquery.countdown.it:
+  remote: http://keith-wood.name/countdown.html
+  version: 2.1.0
+  license:
+    name: MIT
+    url: http://keith-wood.name/licence.html
+    gpl-compatible: true
+  js:
+    /libraries/jquery.countdown/js/jquery.countdown-it.js: { minified: false }
+  dependencies:
+    - core/jquery.countdown
+
+# Japanese
+jquery.countdown.ja:
+  remote: http://keith-wood.name/countdown.html
+  version: 2.1.0
+  license:
+    name: MIT
+    url: http://keith-wood.name/licence.html
+    gpl-compatible: true
+  js:
+    /libraries/jquery.countdown/js/jquery.countdown-ja.js: { minified: false }
+  dependencies:
+    - core/jquery.countdown
+
+# Kannada
+jquery.countdown.kn:
+  remote: http://keith-wood.name/countdown.html
+  version: 2.1.0
+  license:
+    name: MIT
+    url: http://keith-wood.name/licence.html
+    gpl-compatible: true
+  js:
+    /libraries/jquery.countdown/js/jquery.countdown-kn.js: { minified: false }
+  dependencies:
+    - core/jquery.countdown
+
+# Korean
+jquery.countdown.ko:
+  remote: http://keith-wood.name/countdown.html
+  version: 2.1.0
+  license:
+    name: MIT
+    url: http://keith-wood.name/licence.html
+    gpl-compatible: true
+  js:
+    /libraries/jquery.countdown/js/jquery.countdown-ko.js: { minified: false }
+  dependencies:
+    - core/jquery.countdown
+
+# Latvian
+jquery.countdown.lv:
+  remote: http://keith-wood.name/countdown.html
+  version: 2.1.0
+  license:
+    name: MIT
+    url: http://keith-wood.name/licence.html
+    gpl-compatible: true
+  js:
+    /libraries/jquery.countdown/js/jquery.countdown-lv.js: { minified: false }
+  dependencies:
+    - core/jquery.countdown
+
+# Lithuanian
+jquery.countdown.lt:
+  remote: http://keith-wood.name/countdown.html
+  version: 2.1.0
+  license:
+    name: MIT
+    url: http://keith-wood.name/licence.html
+    gpl-compatible: true
+  js:
+    /libraries/jquery.countdown/js/jquery.countdown-lt.js: { minified: false }
+  dependencies:
+    - core/jquery.countdown
+
+# Macedonian
+jquery.countdown.mk:
+  remote: http://keith-wood.name/countdown.html
+  version: 2.1.0
+  license:
+    name: MIT
+    url: http://keith-wood.name/licence.html
+    gpl-compatible: true
+  js:
+    /libraries/jquery.countdown/js/jquery.countdown-mk.js: { minified: false }
+  dependencies:
+    - core/jquery.countdown
+
+# Malayalam
+jquery.countdown.ml:
+  remote: http://keith-wood.name/countdown.html
+  version: 2.1.0
+  license:
+    name: MIT
+    url: http://keith-wood.name/licence.html
+    gpl-compatible: true
+  js:
+    /libraries/jquery.countdown/js/jquery.countdown-ml.js: { minified: false }
+  dependencies:
+    - core/jquery.countdown
+
+# Malaysian
+jquery.countdown.ms:
+  remote: http://keith-wood.name/countdown.html
+  version: 2.1.0
+  license:
+    name: MIT
+    url: http://keith-wood.name/licence.html
+    gpl-compatible: true
+  js:
+    /libraries/jquery.countdown/js/jquery.countdown-ms.js: { minified: false }
+  dependencies:
+    - core/jquery.countdown
+
+# Norvegian
+jquery.countdown.nb:
+  remote: http://keith-wood.name/countdown.html
+  version: 2.1.0
+  license:
+    name: MIT
+    url: http://keith-wood.name/licence.html
+    gpl-compatible: true
+  js:
+    /libraries/jquery.countdown/js/jquery.countdown-nb.js: { minified: false }
+  dependencies:
+    - core/jquery.countdown
+
+# Polish
+jquery.countdown.pl:
+  remote: http://keith-wood.name/countdown.html
+  version: 2.1.0
+  license:
+    name: MIT
+    url: http://keith-wood.name/licence.html
+    gpl-compatible: true
+  js:
+    /libraries/jquery.countdown/js/jquery.countdown-pl.js: { minified: false }
+  dependencies:
+    - core/jquery.countdown
+
+# Portuguese/Brazilian
+jquery.countdown.pt-BR:
+  remote: http://keith-wood.name/countdown.html
+  version: 2.1.0
+  license:
+    name: MIT
+    url: http://keith-wood.name/licence.html
+    gpl-compatible: true
+  js:
+    /libraries/jquery.countdown/js/jquery.countdown-pt-BR.js: { minified: false }
+  dependencies:
+    - core/jquery.countdown
+
+# Romanian
+jquery.countdown.ro:
+  remote: http://keith-wood.name/countdown.html
+  version: 2.1.0
+  license:
+    name: MIT
+    url: http://keith-wood.name/licence.html
+    gpl-compatible: true
+  js:
+    /libraries/jquery.countdown/js/jquery.countdown-ro.js: { minified: false }
+  dependencies:
+    - core/jquery.countdown
+
+# Russian
+jquery.countdown.ru:
+  remote: http://keith-wood.name/countdown.html
+  version: 2.1.0
+  license:
+    name: MIT
+    url: http://keith-wood.name/licence.html
+    gpl-compatible: true
+  js:
+    /libraries/jquery.countdown/js/jquery.countdown-ru.js: { minified: false }
+  dependencies:
+    - core/jquery.countdown
+
+# Serbian
+jquery.countdown.sr:
+  remote: http://keith-wood.name/countdown.html
+  version: 2.1.0
+  license:
+    name: MIT
+    url: http://keith-wood.name/licence.html
+    gpl-compatible: true
+  js:
+    /libraries/jquery.countdown/js/jquery.countdown-sr.js: { minified: false }
+  dependencies:
+    - core/jquery.countdown
+
+# Slovak
+jquery.countdown.sk:
+  remote: http://keith-wood.name/countdown.html
+  version: 2.1.0
+  license:
+    name: MIT
+    url: http://keith-wood.name/licence.html
+    gpl-compatible: true
+  js:
+    /libraries/jquery.countdown/js/jquery.countdown-sk.js: { minified: false }
+  dependencies:
+    - core/jquery.countdown
+
+# Slovenian
+jquery.countdown.sl:
+  remote: http://keith-wood.name/countdown.html
+  version: 2.1.0
+  license:
+    name: MIT
+    url: http://keith-wood.name/licence.html
+    gpl-compatible: true
+  js:
+    /libraries/jquery.countdown/js/jquery.countdown-sl.js: { minified: false }
+  dependencies:
+    - core/jquery.countdown
+# Spanish
+jquery.countdown.es:
+  remote: http://keith-wood.name/countdown.html
+  version: 2.1.0
+  license:
+    name: MIT
+    url: http://keith-wood.name/licence.html
+    gpl-compatible: true
+  js:
+    /libraries/jquery.countdown/js/jquery.countdown-es.js: { minified: false }
+  dependencies:
+    - core/jquery.countdown
+
+# Swedish
+jquery.countdown.sv:
+  remote: http://keith-wood.name/countdown.html
+  version: 2.1.0
+  license:
+    name: MIT
+    url: http://keith-wood.name/licence.html
+    gpl-compatible: true
+  js:
+    /libraries/jquery.countdown/js/jquery.countdown-sv.js: { minified: false }
+  dependencies:
+    - core/jquery.countdown
+
+# Thai
+jquery.countdown.th:
+  remote: http://keith-wood.name/countdown.html
+  version: 2.1.0
+  license:
+    name: MIT
+    url: http://keith-wood.name/licence.html
+    gpl-compatible: true
+  js:
+    /libraries/jquery.countdown/js/jquery.countdown-th.js: { minified: false }
+  dependencies:
+    - core/jquery.countdown
+
+# Turkish
+jquery.countdown.tr:
+  remote: http://keith-wood.name/countdown.html
+  version: 2.1.0
+  license:
+    name: MIT
+    url: http://keith-wood.name/licence.html
+    gpl-compatible: true
+  js:
+    /libraries/jquery.countdown/js/jquery.countdown-tr.js: { minified: false }
+  dependencies:
+    - core/jquery.countdown
+
+# Ukrainian
+jquery.countdown.uk:
+  remote: http://keith-wood.name/countdown.html
+  version: 2.1.0
+  license:
+    name: MIT
+    url: http://keith-wood.name/licence.html
+    gpl-compatible: true
+  js:
+    /libraries/jquery.countdown/js/jquery.countdown-uk.js: { minified: false }
+  dependencies:
+    - core/jquery.countdown
+
+# Urdu
+jquery.countdown.ur:
+  remote: http://keith-wood.name/countdown.html
+  version: 2.1.0
+  license:
+    name: MIT
+    url: http://keith-wood.name/licence.html
+    gpl-compatible: true
+  js:
+    /libraries/jquery.countdown/js/jquery.countdown-ur.js: { minified: false }
+  dependencies:
+    - core/jquery.countdown
+
+# Uzbek
+jquery.countdown.uz:
+  remote: http://keith-wood.name/countdown.html
+  version: 2.1.0
+  license:
+    name: MIT
+    url: http://keith-wood.name/licence.html
+    gpl-compatible: true
+  js:
+    /libraries/jquery.countdown/js/jquery.countdown-uz.js: { minified: false }
+  dependencies:
+    - core/jquery.countdown
+
+# Vietnamese
+jquery.countdown.vi:
+  remote: http://keith-wood.name/countdown.html
+  version: 2.1.0
+  license:
+    name: MIT
+    url: http://keith-wood.name/licence.html
+    gpl-compatible: true
+  js:
+    /libraries/jquery.countdown/js/jquery.countdown-vi.js: { minified: false }
+  dependencies:
+    - core/jquery.countdown
+
+# Welsh
+jquery.countdown.cy:
+  remote: http://keith-wood.name/countdown.html
+  version: 2.1.0
+  license:
+    name: MIT
+    url: http://keith-wood.name/licence.html
+    gpl-compatible: true
+  js:
+    /libraries/jquery.countdown/js/jquery.countdown-cy.js: { minified: false }
+  dependencies:
+    - core/jquery.countdown

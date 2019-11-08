@@ -1,0 +1,256 @@
+@import 'fonts';
+@import 'home/variables';
+@import 'home/globals';
+@import 'home/parts/boxes';
+@import 'home/parts/buttons';
+@import 'home/parts/calls-to-action';
+@import 'home/parts/cards';
+@import 'home/parts/icons';
+@import 'home/parts/featured';
+@import 'home/parts/menu';
+@import 'home/parts/outreach';
+@import 'home/parts/team';
+@import 'home/parts/contact';
+
+#header {
+  background-image: url(/images/anik-bg-blue.png);
+  background-size: cover;
+  background-position: 50% 75%;
+  height: 600px;
+  text-align: center;
+
+  h1 {
+    color: #fff;
+    font-size: 3rem;
+    font-weight: 500;
+    padding-top: 100px;
+
+    span {
+      color: @accent-color;
+      display: block;
+      font-size: 5rem;
+      font-weight: 800;
+      letter-spacing: 2px;
+      margin-top: 1.5rem;
+    }
+  }
+
+  .copy {
+    color: #fff;
+    margin: @more-spacing auto;
+    width: 70%;
+    font-size: 17px;
+
+    a {
+      color: #fff;
+      text-decoration: underline;
+    }
+  }
+
+  .create-account-wrapper {
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 30px;
+    display: flex;
+    margin: auto;
+    overflow: hidden;
+    width: 500px;
+
+    input {
+      background: rgba(255, 255, 255, 0.15);
+      border: 0;
+      color: #fff;
+      outline: none;
+      padding-left: 20px;
+      width: 300px;
+      height: 48px;
+
+      &::-webkit-input-placeholder {
+        color: #fff;
+        opacity: 1;
+      }
+      &:-moz-placeholder {
+        color: #fff;
+        opacity: 1;
+      }
+      &::-moz-placeholder {
+        color: #fff;
+        opacity: 1;
+      }
+      &:-ms-input-placeholder {
+        color: #fff;
+        opacity: 1;
+      }
+      &::-ms-input-placeholder {
+        color: #fff;
+        opacity: 1;
+      }
+      &::placeholder {
+        color: #fff;
+        opacity: 1;
+      }
+    }
+
+    button {
+      background: @accent-color;
+      border: 0;
+      color: @link-active-color;
+      font-weight: 600;
+      outline: none;
+      width: 200px;
+    }
+  }
+
+  @media (max-width: 414px) {
+    h1 {
+      font-size: 1.5rem;
+      padding-top: 50px;
+
+      .highlight {
+        font-size: 3rem;
+        line-height: 4rem;
+        margin-top: 1rem;
+      }
+    }
+
+    .copy {
+      margin: 2rem auto;
+    }
+
+    .create-account-wrapper {
+      width: 95%;
+
+      .create-account {
+        line-height: 1rem;
+        width: 150px;
+      }
+    }
+  }
+
+  @media (max-width: 340px) {
+    h1 .highlight {
+      font-size: 2rem;
+    }
+
+    .create-account-wrapper .create-account {
+      font-size: .85rem;
+    }
+  }
+}
+
+#footer {
+  background: @secondary-bg-color;
+
+  .top {
+    padding: @more-spacing @more-spacing * 3;
+  }
+
+  .bottom {
+    background: #3d444e;
+    color: #fff;
+    padding: 3rem;
+    position: relative;
+    top: 30px;
+
+    a {
+      color: #fff;
+    }
+  }
+
+  .about {
+    img {
+      padding-top: @padding;
+      padding-bottom: @spacing;
+    }
+
+    p {
+      margin-bottom: @spacing;
+    }
+
+    i {
+      background: #fff;
+      border-radius: 50%;
+      box-shadow: 0 0 13px -1px rgba(0, 0, 0, 0.1);
+      line-height: 38px;
+      text-align: center;
+      width: 38px;
+      height: 38px;
+      margin-right: 10px;
+    }
+  }
+
+  .column {
+    padding: 0 35px;
+  }
+
+  h5 {
+    border-bottom: 1px solid #ddd;
+    color: #3d444e;
+    font-size: 18px;
+    padding: @spacing 0;
+  }
+
+  ul {
+    list-style-type: none;
+    padding: 0;
+
+    li {
+      padding: 10px 0;
+    }
+
+    a {
+      color: @primary-text-color;
+    }
+  }
+
+  ul.with-icons {
+    li {
+      position: relative;
+      padding-left: @spacing;
+
+      i {
+        color: @link-active-color;
+        position: absolute;
+        left: 0;
+        top: 13px;
+      }
+    }
+  }
+
+  @media (max-width: 1366px) {
+    .top {
+      padding: @more-spacing @spacing;
+    }
+  }
+
+  @media (max-width: 1180px) and (min-width: 500px) {
+    .top {
+      .about {
+        width: 100% !important;
+      }
+
+      .column:not(.about) {
+        width: 33.33% !important;
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    .top {
+      padding: @more-spacing @spacing;
+    }
+  }
+}
+input.stand-alone {
+    border-radius: 20px !important;
+    padding: 1.15rem .85rem !important;
+    
+    &::placeholder { 
+        font-size: 0.85em;
+    }
+    &:-ms-input-placeholder {
+        font-size: 0.85em;
+    }
+    ::-ms-input-placeholder {
+        font-size: 0.85em;
+    } 
+}

@@ -1,0 +1,40 @@
+block.settings.fb_likebox:
+  type: block_settings
+  label: 'FB Likebox block settings'
+  mapping:
+    url:
+      type: string
+      label: 'Facebook Page URL'
+    app_id:
+      type: string
+      label: 'Facebook App ID'
+    hide_header:
+      type: integer
+      label: 'Hide cover photo in the header'
+    stream:
+      type: integer
+      label: 'Show posts from the Page timeline'
+    show_faces:
+      type: string
+      label: 'Show profile photos when friends like this'
+    title:
+      type: string
+      label: 'iFrame title attribute'
+    width:
+      type: integer
+      label: 'Width'
+    height:
+      type: integer
+      label: 'Height'
+    hide_cta:
+      type: integer
+      label: 'Hide the custom call to action button (if available)'
+    small_header:
+      type: integer
+      label: 'Use the small header instead'
+    adapt_container_width:
+      type: integer
+      label: 'Try to fit inside the container width'
+    language:
+      type: string
+      label: 'Choose your language'

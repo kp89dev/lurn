@@ -1,0 +1,113 @@
+<?php
+
+/**
+ * @file
+ * The floating_block module allows parts of the site to stay on the page when
+ * scrolling.
+ */
+
+/**
+ * Implements hook_page_attachments();
+ */
+function floating_block_page_attachments(array &$attachments) {
+  $floating_blocks = \Drupal::config('floating_block.settings')->get('blocks');
+
+  // Only load the javascript if floating blocks have been configured.
+  if (count($floating_blocks)) {
+    $attachments['#attached']['library'][] = 'floating_block/floating_block';
+    $attachments['#attached']['drupalSettings']['floatingBlock']['blocks'] = $floating_blocks;
+  }
+}
+
+/**
+ * Implements hook_help().
+ */
+function floating_block_help($route_name, \Drupal\Core\Routing\RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    case 'help.page.floating_block':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('The Floating block module allows you to keep html blocks, selected using jquery selectors in a fixed position on the page as you scroll. It works in a similar way the table header fixer in Drupal Core. This means that when the user scrolls their browser selected parts of the page can stay in the users view. This is extremely useful when you have pages with lots of content and you want a side menu to stay in view.') . '</p>';
+      return $output;
+    case 'floating_block.admin_settings':
+      $output = '<h3>' . t('How to configure a floating block') . '</h3>';
+      $output .= '<p>' . t('Use the textbox below a floating block configurations, one per line. See below for example configurations:') . '</p>';
+      $output .= '<dl>';
+      $output .= '<dt>' . t('<code>#sidebar-left</code>') . '</dt>';
+      $output .= '<dd>' . t('Using the jQuery selector #sidebar-left float the left sidebar. The selector will depend on your chosen theme. The selector can be any valid <a href="@jquery_selector_url">jQuery selector</a>.', array('@jquery_selector_url' => 'http://api.jquery.com/category/selectors/')) . '</dd>';
+      $output .= '<dt>' . t('<code>#sidebar-left|padding_top=8,padding_bottom=4</code>') . '</dt>';
+      $output .= '<dd>' . t('Float the left sidebar. Once the block is floating the top will be offset 8px from the top of the page and if the floating block comes near the bottom of the page it will be offset 4px from the bottom of the page.') . '</dd>';
+      $output .= '<dt>' . t('<code>#sidebar-left|container=#main</code>') . '</dt>';
+      $output .= '<dd>' . t('Float the left sidebar within a container in your theme called <code>#main</code>') . '</dd>';
+      return $output;
+  }
+}
+
+/**
+ * Converts a string representation of floating block settings to an array.
+ *
+ * @param string $floating_blocks
+ *   A string representation of floating block settings.
+ *
+ * @return array
+ *   An array representation of floating block settings.
+ */
+function _floating_block_admin_convert_text_to_array($floating_blocks) {
+  $floating_blocks = preg_split("/(\r\n|\n)/", $floating_blocks, NULL, PREG_SPLIT_NO_EMPTY);
+  $output = array();
+
+  foreach ($floating_blocks as $floating_block) {
+    $settings = explode('|', $floating_block);
+    $output[$settings[0]] = array();
+    if (isset($settings[1])) {
+      preg_match_all("/([^=|,]*)=([^=|,]*),?/", $settings[1], $matches, PREG_SET_ORDER);
+      foreach ($matches as $match) {
+        $output[$settings[0]][$match[1]] = $match[2];
+      }
+    }
+  }
+  return $output;
+}
+
+/**
+ * Converts an array representation of floating block settings to a string.
+ *
+ * @param array $floating_blocks
+ *   An array representation of floating block settings.
+ *
+ * @return string
+ *   A string representation of floating block settings.
+ */
+function _floating_block_admin_convert_array_to_text($floating_blocks) {
+  $output = array();
+  foreach ($floating_blocks as $selector => $settings) {
+    $output_line = $selector;
+    if (count($settings)) {
+      $settings_line = array();
+      foreach ($settings as $key => $value) {
+        $settings_line[] = $key . '=' . $value;
+      }
+      $output_line .= '|' . implode(',', $settings_line);
+    }
+    $output[] = $output_line;
+  }
+  return implode("\n", $output);
+}
+
+/**
+  * Implements hook_library_info().
+  */
+function floating_block_library_info() {
+  $libraries['floating_block'] = array(
+    'title' => 'Floating Block',
+    'version' => 0.1,
+    'js' => array(
+      drupal_get_path('module', 'floating_block') . '/floating_block.js' => array(),
+    ),
+    'dependencies' => array(
+      array('system', 'jquery'),
+      array('system', 'drupalSettings'),
+    ),
+  );
+  return $libraries;
+}

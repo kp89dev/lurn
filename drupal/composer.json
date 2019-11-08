@@ -1,0 +1,92 @@
+{
+    "name": "drupal-composer/drupal-project",
+    "description": "Project template for Drupal 8 projects with composer",
+    "type": "project",
+    "license": "GPL-2.0+",
+    "authors": [
+        {
+            "name": "",
+            "role": ""
+        }
+    ],
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://packages.drupal.org/8"
+        }
+    ],
+    "require": {
+        "composer/installers": "^1.2",
+        "cweagans/composer-patches": "^1.6",
+        "drupal-composer/drupal-scaffold": "^2.2",
+        "drupal/console": "^1.0.2",
+        "drupal/core": "~8.4",
+        "drupal/s3fs": "^3.0",
+        "drush/drush": "^9.2",
+        "webflo/drupal-finder": "^1.0.0",
+        "webmozart/path-util": "^2.3"
+    },
+    "require-dev": {
+        "behat/mink": "~1.7",
+        "behat/mink-goutte-driver": "~1.2",
+        "jcalderonzumba/gastonjs": "~1.0.2",
+        "jcalderonzumba/mink-phantomjs-driver": "~0.3.1",
+        "mikey179/vfsstream": "~1.2",
+        "phpunit/phpunit": ">=4.8.28 <5",
+        "symfony/css-selector": "~2.8|~3.0"
+    },
+    "conflict": {
+        "drupal/drupal": "*"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "config": {
+        "sort-packages": true
+    },
+    "autoload": {
+        "classmap": [
+            "scripts/composer/ScriptHandler.php"
+        ]
+    },
+    "scripts": {
+        "drupal-scaffold": "DrupalComposer\\DrupalScaffold\\Plugin::scaffold",
+        "pre-install-cmd": [
+            "DrupalProject\\composer\\ScriptHandler::checkComposerVersion"
+        ],
+        "pre-update-cmd": [
+            "DrupalProject\\composer\\ScriptHandler::checkComposerVersion"
+        ],
+        "post-install-cmd": [
+            "DrupalProject\\composer\\ScriptHandler::createRequiredFiles"
+        ],
+        "post-update-cmd": [
+            "DrupalProject\\composer\\ScriptHandler::createRequiredFiles"
+        ]
+    },
+    "extra": {
+        "enable-patching": true,
+        "installer-paths": {
+            "../public/blog/core": ["type:drupal-core"],
+            "../public/blog/libraries/{$name}": ["type:drupal-library"],
+            "../public/blog/modules/contrib/{$name}": ["type:drupal-module"],
+            "../public/blog/profiles/contrib/{$name}": ["type:drupal-profile"],
+            "../public/blog/themes/contrib/{$name}": ["type:drupal-theme"],
+            "drush/contrib/{$name}": ["type:drupal-drush"]
+        },
+        "patches": {
+          "drupal/core": {
+                "Ajax support patch": "https://www.drupal.org/files/issues/1988968-105-ajax-loader.patch",
+                "Ajax firewall patch": "https://www.drupal.org/files/issues/ajax-remove-X-Drupal-Ajax-Token-verification-2580191-33.patch"
+          },
+          "drupal/panelbutton": {
+                "Lib path PanelButton": "https://www.drupal.org/files/issues/module_can_t_find-2881820-8.patch"
+          },
+          "drupal/colorbutton": {
+                "Lib path ColorButton": "https://www.drupal.org/files/issues/2717655-path-cant-resolve-libraries-11.patch"
+          },
+          "drupal/ckeditor_font": {
+                "Lib path font size": "https://www.drupal.org/files/issues/2729087-lib-issue-12.patch"
+          }          
+        }
+    }
+}

@@ -1,0 +1,12 @@
+basic:
+  version: 1.0.x
+  css:
+    theme:
+      css/social_media.css: {}
+facebook:
+  version: 1.0.x
+  js:
+   js/facebook.js: { }
+  dependencies:
+    - core/jquery
+    - core/drupalSettings

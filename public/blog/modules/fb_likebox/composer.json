@@ -1,0 +1,7 @@
+{
+  "name": "drupal/fb_likebox",
+  "type": "drupal-module",
+  "description": "Simple module that provides a configurable block with Facebook Likebox's plugin",
+  "homepage": "http://drupal.org/project/fb_likebox",
+  "license": "GPL-2.0+"
+}

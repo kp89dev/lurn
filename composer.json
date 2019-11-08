@@ -1,0 +1,100 @@
+{
+    "name": "laravel/laravel",
+    "description": "The Laravel Framework.",
+    "keywords": ["framework", "laravel"],
+    "license": "MIT",
+    "type": "project",
+    "require": {
+        "php": ">=5.6.4",
+        "laravel/framework": "5.6.*",
+        "ircmaxell/random-lib": "^1.2",
+        "doctrine/dbal": "^2.6",
+        "intervention/image": "^2.3",
+        "infusionsoft/php-sdk": "^1.2",
+        "maxbanton/cwh": "^1.0",
+        "rap2hpoutre/laravel-credit-card-validator": "^0.0.6",
+        "league/csv": "^8.2",
+        "niklasravnsborg/laravel-pdf": "^2.0",
+        "arcanedev/seo-helper": "^1.4",
+        "woopra/woopra": "dev-master",
+        "watson/sitemap": "^2.0",
+        "predis/predis": "^1.1",
+        "league/flysystem-aws-s3-v3": "^1.0",
+        "league/uri": "^5.0",
+        "piwik/device-detector": "^3.8",
+        "geoip2/geoip2": "~2.0",
+        "snowplow/referer-parser": "dev-master",
+        "aws/aws-sdk-php": "^3.52",
+        "laravel/socialite": "^3.0",
+        "socialiteproviders/twitter": "^3.0",
+        "socialiteproviders/instagram": "^3.0",
+        "thujohn/twitter": "^2.2",
+        "sammyk/laravel-facebook-sdk": "^3.5",
+        "rollbar/rollbar-laravel": "^2.2",
+        "arcanedev/log-viewer": "^4.5",
+        "oyejorge/less.php": "v1.7.0.14",
+        "mockery/mockery": "0.9.*",
+        "phpunit/phpunit": "~7.0",
+        "fzaninotto/faker": "^1.7"
+    },
+    "require-dev": {
+        "barryvdh/laravel-debugbar": "~3.0",
+        "laravel/dusk": "~3.0",
+        "filp/whoops": "~2.0",
+        "symfony/css-selector": "~4.0",
+        "symfony/dom-crawler": "~4.0",
+        "laravel/tinker": "^1.0",
+        "barryvdh/laravel-ide-helper": "^2.4"
+    },
+    "autoload": {
+        "classmap": [
+            "database"
+        ],
+        "psr-4": {
+            "App\\": "app/",
+            "Tests\\": "tests/",
+            "Gamification\\": "app/Libraries/Gamification/",
+            "Seeders\\": "database/seeds/"
+        }
+    },
+    "autoload-dev": {
+        "classmap": [
+            "tests/TestCase.php",
+            "tests/LoggedInTestCase.php",
+            "tests/AdminLoggedInTestCase.php",
+            "tests/SuperAdminLoggedInTestCase.php"
+        ]
+    },
+    "scripts": {
+        "post-root-package-install": [
+            "@php -r \"file_exists('.env') || copy('.env.example', '.env');\""
+        ],
+        "post-create-project-cmd": [
+            "@php artisan key:generate"
+        ],
+        "post-install-cmd": [
+            "Illuminate\\Foundation\\ComposerScripts::postInstall"
+        ],
+        "post-update-cmd": [
+            "Illuminate\\Foundation\\ComposerScripts::postUpdate"
+        ],
+        "post-autoload-dump": [
+            "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump",
+            "@php artisan package:discover"
+        ]
+    },
+    "config": {
+        "preferred-install": "dist",
+        "optimize-autoloader": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "extra": {
+        "laravel": {
+            "dont-discover": [
+                "laravel/dusk",
+                "rollbar/rollbar-laravel"
+            ]
+        }
+    }
+}

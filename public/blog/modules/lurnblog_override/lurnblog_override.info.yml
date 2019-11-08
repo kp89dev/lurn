@@ -1,0 +1,6 @@
+name: LurnBlog Override
+description: Used to Override Core and existing Module functionality.
+package: Custom
+type: module
+version: 1.0
+core: 8.x

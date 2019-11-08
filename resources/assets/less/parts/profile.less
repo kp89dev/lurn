@@ -1,0 +1,272 @@
+.profile-page {
+  .top-section {
+    background-color: #eff1f5;
+    display: flex;
+    padding: @spacing;
+    border-bottom: 1px solid rgba(0, 0, 0, .03);
+
+    @media (max-width: 560px) {
+      padding: @padding;
+    }
+
+    h1 {
+      i.icon {
+        opacity: .2;
+      }
+
+      @media (max-width: 560px) {
+        font-size: 18px;
+        margin-bottom: 5px;
+      }
+    }
+
+    .profile-picture {
+      line-height: 0;
+      flex-shrink: 0;
+
+      img {
+        width: 110px;
+        border-radius: 6px;
+        margin-top: -45px;
+        border: 3px solid @primary-color;
+        box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .2);
+
+        @media (max-width: 560px) {
+          width: 80px;
+          margin-top: -25px;
+        }
+      }
+    }
+
+    .content {
+      flex-grow: 1;
+      padding-left: 20px;
+
+      .progress-bar {
+        max-width: 200px;
+
+        @media (max-width: 560px) {
+          max-width: 145px;
+
+          .label.right {
+            display: block;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            margin-top: 5px;
+            margin-left: 0;
+          }
+        }
+      }
+    }
+  }
+
+  #sidebar {
+    .padded {
+      padding: @spacing @padding;
+
+      @media (max-width: 768px) {
+        padding: @padding;
+      }
+    }
+
+    .widget {
+      &:first-child {
+        margin-top: 0;
+      }
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  section.unlock {
+    h3 {
+      font-size: 22px;
+      margin-bottom: @padding;
+    }
+
+    .points {
+      font-size: 32px;
+      font-weight: 900;
+    }
+
+    .progress-bar {
+      margin-top: @spacing - 5;
+    }
+
+    .bonus-course {
+      display: flex;
+
+      .thumbnail {
+        width: 150px;
+        flex-shrink: 0;
+        line-height: 0;
+
+        img {
+          border-radius: 3px 0 0 3px;
+        }
+      }
+
+      .description {
+        padding: @padding;
+        background-color: #fff;
+        border-radius: 0 3px 3px 3px;
+        flex-grow: 1;
+        .shadow();
+
+        p {
+          margin: 0 !important;
+        }
+
+        .value {
+          margin-top: 5px !important;
+          opacity: .7;
+        }
+      }
+    }
+  }
+
+  section.current-bonus {
+    text-align: center;
+
+    h3 {
+      font-size: 26px;
+    }
+
+    p {
+      font-size: 18px;
+    }
+  }
+
+  .achievements {
+    line-height: normal;
+    margin: -@spacing;
+
+    .column {
+      border-left: 1px solid rgba(0, 0, 0, .05);
+      padding: @spacing @padding !important;
+
+      &:first-child {
+        border-left: none;
+      }
+
+      @media (max-width: 560px) {
+        width: 50% !important;
+        padding: @padding !important;
+        border-bottom: 1px solid rgba(0, 0, 0, .05);
+      }
+    }
+
+    .achievement {
+      text-align: center;
+
+      div.icon {
+        font-size: 32px;
+        opacity: .2;
+        margin-bottom: 5px;
+
+        i.icon {
+          margin: 0;
+        }
+      }
+
+      .value {
+        font-weight: 900;
+        font-size: 32px;
+      }
+
+      .label {
+        text-transform: uppercase;
+        opacity: .7;
+        font-size: 14px;
+        margin-top: 5px;
+      }
+    }
+  }
+
+  table.ui.table {
+    border: 1px solid #eee;
+    border-bottom-color: #ddd;
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .05);
+
+    &.blue thead th {
+      border-bottom: 2px solid #5d92f2;
+    }
+
+    &.green thead th {
+      border-bottom: 2px solid #52cd50;
+    }
+
+    &.orange thead th {
+      border-bottom: 2px solid #ffae7e;
+    }
+
+    tfoot tr td {
+      background-color: #fbfbfb;
+      border-top: 1px solid #eee;
+    }
+
+    tr {
+      &.pending {
+        td {
+          background-color: #fafafa;
+          color: #666;
+        }
+      }
+    }
+
+    th, td {
+      background-color: #fff;
+      padding: 10px;
+      vertical-align: middle;
+      line-height: normal;
+
+      .ui.button {
+        font-size: 13px;
+        padding: 7px 12px !important;
+        font-weight: normal;
+        white-space: nowrap;
+
+        &.basic {
+          border: 1px solid #eee !important;
+        }
+      }
+
+      .ui.outline.label {
+        background: none;
+        padding: 3px 6px;
+        border-radius: 3px;
+        border: 1px solid #ccc;
+        font-weight: normal;
+        text-transform: uppercase;
+        color: #888;
+        font-size: 10px;
+        margin-left: 3px;
+      }
+    }
+
+    th {
+      font-size: 12px;
+      text-transform: uppercase;
+      padding: 10px 12px !important;
+    }
+
+    td {
+      border-top-color: #eee;
+    }
+  }
+
+  .badges {
+    .badge {
+      line-height: 0;
+
+      img {
+        border-radius: 3px;
+      }
+    }
+  }
+}

@@ -1,0 +1,35 @@
+# Schema for the configuration files of the Facebook comments module.
+
+field.formatter.settings.facebook_comments_formatter:
+  type: mapping
+  label: 'Facebook comments display format settings'
+  mapping:
+    facebook_comments_style:
+      type: mapping
+      label: 'Color schemes' 
+      mapping:
+        type: string
+        label: 'Color scheme'
+    facebook_comments_width:
+      type: integer
+      label: 'Facebook comment plugin width'
+    facebook_comments_width_fluid:
+      type: boolean
+      label: 'Fluid Facebook comment plugin width'
+    facebook_comments_amount:
+      type: integer
+      label: 'Amount of comments to display'
+
+facebook_comments.settings:
+  type: config_object
+  label: 'Facebook comments Content Type Settings'
+  mapping:
+    facebook_comments_appid:
+      type: string
+      label: 'Facebook App ID'
+    facebook_comments_admins:
+      type: string
+      label: 'Facebook Admins'
+    facebook_comments_ssl:
+      type: boolean
+      label: 'SSL support'

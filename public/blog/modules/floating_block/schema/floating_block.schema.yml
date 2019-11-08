@@ -1,0 +1,9 @@
+# Schema for the configuration files of the floating_block module.
+
+floating_block.settings:
+  type: mapping
+  label: 'Floating block settings'
+  mapping:
+    blocks:
+      type: array
+      label: 'Floating blocks'

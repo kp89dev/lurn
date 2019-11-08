@@ -1,0 +1,70 @@
+/*
+ * SEARCH AUTOCOMPLETE
+ * THEME LurnBlog
+ */
+
+#block-searchform .input-group {
+    width: 100%;
+    margin-top: 8px;
+}
+#block-searchform .input-group .input-group-btn {
+    display: none;
+}
+.js #block-searchform input.form-autocomplete {
+    width: 100%;
+    padding: 15px 10px;
+    color: #999;
+    border: 1px solid #DDD;
+    border-radius: 3px;
+    box-shadow: 1px 1px 3px #EEE inset;
+    box-sizing: border-box;
+    height: auto;
+}
+ul[data-sa-theme="lurnblog"] {
+  min-width: 100px;
+}
+ul[data-sa-theme="lurnblog"] li.ui-menu-item {
+    padding: 0 8px;
+}
+ul[data-sa-theme="lurnblog"] li.ui-menu-item .ui-state-active {
+    background-color: transparent;
+    border: none;  
+}
+ul[data-sa-theme="lurnblog"] li.ui-menu-item a.ui-menu-item-wrapper {
+    color: #1a3e6f;
+    font-family: AvenirNextLtPro-Regular;
+    font-size: 18px;
+    line-height: 27px;
+    padding: 0;
+    white-space: normal;
+}
+ul[data-sa-theme="lurnblog"] li.ui-menu-item a.ui-menu-item-wrapper:hover {
+    color: #1a3e6f;
+}
+ul[data-sa-theme="lurnblog"] li.ui-menu-item a.ui-menu-item-wrapper.ui-state-active {
+    color: #1a3e6f;
+    margin: 0;
+    padding: 0;
+    white-space: normal;   
+}
+ul[data-sa-theme="lurnblog"] li.ui-menu-item a.ui-menu-item-wrapper div.ui-autocomplete-fields {
+    margin-top: 10px;
+}
+ul[data-sa-theme="lurnblog"] li.ui-menu-item a.ui-menu-item-wrapper div.ui-autocomplete-fields.first {
+    margin-top: 0px;
+}
+ul[data-sa-theme="lurnblog"] li.ui-menu-item a.ui-menu-item-wrapper .ui-autocomplete-field-featured_image {
+    max-width: 80px;
+    float: left;
+    margin-top: 7px;
+    padding-right: 5px;
+}
+ul[data-sa-theme="lurnblog"] li.ui-menu-item span.ui-autocomplete-field-created {
+    color: #555555;
+    font-size: 12px;
+    padding: 0;
+}
+ul[data-sa-theme="lurnblog"] li.ui-menu-item span.ui-autocomplete-field-created.ui-state-active  {
+    color: #555555;
+    margin: 0;
+}

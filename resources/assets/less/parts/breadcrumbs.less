@@ -1,0 +1,56 @@
+#breadcrumbs {
+  background-color: #eff1f5;
+  padding: 5px @padding;
+  user-select: none;
+
+  @media (max-width: 560px) {
+    padding: 0;
+
+    ul {
+      display: none;
+    }
+
+    & + #course-content {
+      #notes {
+        top: 0 !important;
+      }
+    }
+  }
+
+  ul {
+    margin: 0;
+    padding: 0;
+    font-size: 0;
+    line-height: 0;
+
+    li {
+      display: inline-block;
+      font-size: 12px;
+      line-height: 22px;
+
+      &:before {
+        display: inline-block;
+        content: '\f105';
+        color: #cad1dc;
+        font-family: Icons;
+        margin: 0 @padding;
+      }
+
+      &:first-child {
+        &:before {
+          display: none;
+        }
+      }
+
+      a {
+        font-weight: normal;
+        color: #8fabc7;
+        transition: all .2s;
+
+        &:hover {
+          color: @primary-color;
+        }
+      }
+    }
+  }
+}

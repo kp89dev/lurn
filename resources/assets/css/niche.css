@@ -1,0 +1,635 @@
+
+.niche-design {
+    font-family: 'Roboto', 'Open Sans', sans-serif;
+    font-size: 14px;
+    color: #2c3e50;
+    padding: 0 0 60px !important;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.niche-design a {
+    color: #19b99a;
+}
+.unsel {
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.niche-design h1,  .niche-design h2,  .niche-design h3,  .niche-design h4,  .niche-design h5,  .niche-design h6,  .niche-design p {
+    font-family: 'Roboto', 'Open Sans', sans-serif;
+    font-weight: 400;
+}
+.niche-design h1,  .niche-design h3,  .niche-design h4 {
+    font-weight: 700;
+    margin: 15px 0;
+    color: #2c3e50;
+}
+.niche-design h1 {
+    font-size: 60px;
+    margin: 30px 0;
+}
+.niche-design h2 {
+    font-size: 24px;
+    color: #94a5a6;
+}
+.niche-design h3 {
+    font-size: 24px;
+}
+.niche-design h4 {
+    font-size: 14px;
+}
+.niche-design .center {
+    text-align: center;
+}
+.niche-design .clear {
+    clear: both;
+}
+.niche-design .wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.niche-design .vsep-10 {
+    height: 10px;
+}
+.niche-design .vsep-15 {
+    height: 15px;
+}
+.niche-design .vsep-20 {
+    height: 20px;
+}
+.niche-design .vsep-30,  .niche-design .vsep {
+    height: 30px;
+}
+.niche-design .vsep-40 {
+    height: 40px;
+}
+.niche-design .vsep-50 {
+    height: 50px;
+}
+.niche-design .vsep-60 {
+    height: 60px;
+}
+.niche-design .page-tagline,  .niche-design .page-title {
+    text-align: center;
+}
+.niche-design .page-title {
+    position: relative;
+}
+.niche-design .page-title .btn {
+    position: absolute;
+    right: 0;
+}
+.niche-design .form .label {
+    text-align: right;
+    color: #34495e;
+    font-weight: 500;
+    padding-top: 10px;
+    padding-right: 25px;
+}
+.niche-design .form .label p {
+    font-size: 18px;
+    color: #94a5a6;
+    font-weight: 300;
+}
+.niche-design .form .label label {
+    font-size: 24px;
+    font-weight: bold;
+    font-family: 'Roboto', 'Open Sans', sans-serif;
+}
+.niche-design .form-control {
+    font-size: 18px;
+    color: #34495e;
+    padding: 10px 15px;
+    height: auto;
+    line-height: normal;
+    border: 2px solid #bdc2c8;
+}
+.niche-design .form .input {
+    padding-left: 25px;
+}
+.niche-design .form-control:focus {
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+.niche-design .form .form-control:focus {
+    border-color: #2e98cc;
+}
+.niche-design .form .form-control.has-error {
+    border-color: #e84c3c !important;
+}
+.niche-design .form .group {
+    margin-top: 20px;
+}
+.niche-design .form .input label {
+    display: block;
+    color: #34495e;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+.niche-design .list-group .list-group-item {
+    border: 2px solid #bdc2c8;
+    font-size: 18px;
+    margin-bottom: -2px;
+}
+.niche-design .list-group .list-group-item .options {
+    float: right;
+}
+.niche-design .list-group .list-group-item .options i {
+    color: #bdc2c8;
+    cursor: pointer;
+    font-size: 16px;
+}
+.niche-design .list-group .list-group-item .options i.edit:hover {
+    color: #2e98cc;
+}
+.niche-design .list-group .list-group-item .options i.delete:hover {
+    color: #e84c3d;
+}
+.niche-design .append-list-add {
+    font-size: 16px;
+}
+.niche-design .bs-select-hidden {
+    display: none;
+}
+.niche-design .bootstrap-select > button {
+    display: block;
+    font-size: 18px;
+    color: #34495e;
+    padding: 10px 15px;
+    height: auto;
+    line-height: normal;
+    border: 2px solid #bdc2c8;
+}
+.niche-design .bootstrap-select.has-error > button {
+    border-color: #e84c3c;
+}
+.niche-design .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) {
+    width: 100%;
+}
+.niche-design .bootstrap-select div.dropdown-menu {
+    border: 2px solid #bdc2c8;
+    border-top-color: #0088cc;
+    margin-top: -2px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+.niche-design .bootstrap-select div.dropdown-menu li {
+    font-size: 16px;
+}
+.niche-design .bootstrap-select div.dropdown-menu li > a {
+    font-weight: 400;
+}
+.niche-design .dropdown-menu li > a:hover,  .niche-design .dropdown-menu .active > a,  .niche-design .dropdown-menu .active > a:hover {
+    background-color: #19b99a;
+    color: #fff;
+}
+.niche-design .bootstrap-select .dropdown-toggle:active,  .niche-design .bootstrap-select .dropdown-toggle:focus {
+    outline: none !important;
+    border-color: #0088cc;
+    background-color: #fff;
+}
+.niche-design .bootstrap-select .caret:before {
+    content: "\f0d7";
+}
+.niche-design .bootstrap-select.open .caret:before {
+    content: "\f0d8";
+}
+.niche-design #header {
+    background-color: #2c3e50;
+    color: #fff;
+    margin-bottom: 80px;
+    margin-bottom: 15px;
+}
+.niche-design #topnav ul {
+    font-size: 0;
+    text-align: right;
+    padding: 0 20px;
+}
+.niche-design #topnav ul li {
+    display: inline-block;
+    font-size: 18px;
+}
+.niche-design #topnav ul li a {
+    display: block;
+    color: #fff;
+    padding: 0 20px;
+    line-height: 82px;
+    text-decoration: none;
+    vertical-align: middle;
+}
+.niche-design #topnav ul li a:hover {
+    color: #19b99a;
+}
+.niche-design .buttons-block {
+    text-align: center;
+}
+.niche-design .buttons-block .btn {
+    padding: 15px 30px;
+    -webkit-border-radius: 4px !important;
+    -moz-border-radius: 4px !important;
+    border-radius: 4px !important;
+}
+.niche-design .btn {
+    font-weight: bold;
+}
+.niche-design .btn.btn-primary {
+    background-color: #245AA9;
+    color: #fff;
+    background-image: none;
+    border: 0;
+}
+.niche-design .btn.btn-hg {
+    padding: 20px;
+}
+.niche-design .btn.btn-input {
+    padding: 12px 0 11px;
+    font-size: 18px;
+}
+.niche-design .btn.btn-primary:hover {
+    background-color: #337DE8 !important;
+}
+.niche-design .btn.btn-primary:active {
+    background-color: #337DE8 !important;
+}
+.niche-design .btn.btn-secondary {
+    background-color: #eef3f5;
+    color: #889595;
+}
+.niche-design .btn.btn-secondary:hover {
+    background-color: #f4f9fb;
+}
+.niche-design .btn.btn-secondary:active {
+    background-color: #e0e5e7;
+}
+.niche-design .btn:active {
+    box-shadow: inset 0 2px 3px 0 rgba(0, 0, 0, 0.1)
+}
+.niche-design .buttons-block-md {
+    margin-top: 20px;
+}
+.niche-design .mega-list {
+    max-height: 500px;
+    overflow: auto;
+    border: 2px solid #bdc2c8;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.niche-design .mega-list ul {
+    padding-left: 0;
+    margin-bottom: 0;
+}
+.niche-design .mega-list ul li {
+    display: block;
+    font-size: 18px;
+    color: #34495e;
+    font-weight: 600;
+}
+.niche-design .mega-list ul li .icon {
+    color: #19b99a;
+    font-size: 18px;
+    margin-right: 3px;
+}
+.niche-design .mega-list ul li > span {
+    display: block;
+    padding: 10px;
+    border-bottom: 2px solid #bdc2c8;
+}
+.niche-design .mega-list > ul > li:hover {
+    cursor: pointer;
+}
+.niche-design .mega-list ul li ul {
+    display: none;
+}
+.niche-design .mega-list li.niche {
+    padding: 10px 10px 10px 40px;
+    border-bottom: 2px solid #bdc2c8;
+    font-weight: 400;
+}
+.niche-design .mega-list li.category > ul {
+    min-height: 45px;
+}
+.niche-design .mega-list li.category > ul:empty {
+    border-bottom: 2px solid #bdc2c8;
+    margin-bottom: -2px;
+}
+.niche-design .mega-list ul li:not(.open):last-child > span,  .niche-design .mega-list ul li:last-child ul li:last-child {
+    border-bottom: 0;
+}
+.niche-design .mega-list ul li.open ul {
+    display: block;
+}
+.niche-design .mega-list ul li .options {
+    float: right;
+}
+.niche-design .mega-list ul li .options i {
+    color: #bdc2c8;
+    cursor: pointer;
+    font-size: 16px;
+}
+.niche-design .mega-list ul li .options i.edit:hover {
+    color: #2e98cc;
+}
+.niche-design .mega-list ul li .options i.delete:hover {
+    color: #e84c3d;
+}
+.niche-design li.sorting-item {
+    background-color: #fff;
+    border: 2px solid #bdc2c8 !important;
+    margin: -2px;
+    box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.2);
+}
+.niche-design .ui-sortable-placeholder {
+    background-color: #eee;
+    visibility: visible !important;
+    border-bottom: 2px solid #bdc2c8;
+}
+.niche-design li.ui-sortable-placeholder:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+}
+.niche-design .pick-niche-button-block > div {
+    margin: 2px 0;
+}
+.niche-design .pick-niche-button-block .btn {
+    font-size: 20px;
+    font-weight: bold;
+}
+.niche-design.load-screen {
+    background-color: #245AA9;
+    color: #fff;
+    text-align: center;
+    font-size: 35px;
+    padding-top: 200px !important;
+}
+.niche-design.load-screen .progressbar {
+    background-color: #fff;
+    width: 730px;
+    margin: 30px auto 0;
+    -webkit-border-radius: 5px !important;
+    -moz-border-radius: 5px !important;
+    border-radius: 5px !important;
+    overflow: hidden;
+    height: 35px;
+}
+.niche-design.load-screen .progressbar .ui-progressbar-value {
+    background-color: #2c3e50;
+    height: 35px;
+    -webkit-transition: width 0.3s;
+    -moz-transition: width 0.3s;
+    -ms-transition: width 0.3s;
+    -o-transition: width 0.3s;
+    transition: width 0.3s;
+}
+.niche-design .niche-report .widget {
+    background-color: #eef3f5;
+    padding: 20px 20px 0;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.niche-design .niche-report .widget.widget-fullpad {
+    padding-bottom: 20px;
+}
+.niche-design .niche-report .widget .header {
+    height: 50px;
+}
+.niche-design .niche-report .widget .body {
+    height: 190px;
+}
+.niche-design .niche-report .widget .body.left-aligned {
+    text-align: left;
+    padding: 0 80px;
+}
+.niche-design .niche-report .widget .body h4 {
+    font-size: 20px;
+    font-weight: 400;
+}
+.niche-design .niche-report .widget .body ol,  .niche-design .niche-report .widget .bodbtn-lgy ul {
+    padding-left: 20px;
+}
+.niche-design .niche-report .widget .body.upsell-funnel {
+    padding-bottom: 20px;
+}
+.niche-design .niche-report .widget .body.upsell-funnel i {
+    font-size: 50px;
+    margin-top: 40px;
+}
+.niche-design .niche-report .widget.widget-bigger .body {
+    height: auto;
+}
+.niche-design .niche-report .widget .tagline {
+    color: #7e8c8d;
+    margin-top: -10px;
+}
+.niche-design .niche-report .widget .icon {
+    margin-top: 50px;
+}
+.niche-design .niche-report .widget .icon i {
+    font-size: 50px;
+    line-height: normal;
+}
+.niche-design .niche-report .widget .value {
+    font-size: 40px;
+    font-weight: bold;
+    line-height: 60px;
+}
+.niche-design .niche-report .widget .top5-keywords {
+    padding: 0;
+    list-style-type: none;
+    font-size: 15px;
+}
+.niche-design .niche-report .widget .top5-keywords li {
+    margin: 10px 0;
+}
+.niche-design .niche-report [class*="col-"] {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.niche-design .niche-report .row {
+    margin-left: -10px;
+    margin-right: -10px;
+}
+.niche-design .widget-gender table {
+    width: 100%;
+    margin-top: 20px;
+}
+.niche-design .niche-report .widget-gender .body {
+    min-height: 255px;
+    height: auto;
+}
+.niche-design .niche-report .widget-products .body, .niche-design .niche-report .widget-audience .body {
+    height: 144px;
+}
+.niche-design .niche-report .widget-keywords .body {
+    min-height: 249px;
+    height: auto;
+}
+.niche-design .widget-gender .fa {
+    font-size: 50px;
+}
+.niche-design .widget-gender #gender-chart {
+    width: 100px;
+    height: 100px;
+    margin: auto auto;
+}
+.niche-design .niche-report .widget.widget-bigger.widget-map .body {
+    min-height: 539px;
+}
+.niche-design #location-map {
+    width: 100%;
+    height: 300px;
+}
+.niche-design .shopping-icon {
+    color: #1abb9a;
+}
+.niche-design .users-icon {
+    color: #f1c40f;
+}
+.niche-design .female-icon {
+    color: #9b58b5;
+}
+.niche-design .male-icon {
+    color: #3299de;
+}
+.niche-design .bgm-green {
+    background-color: #19b99a;
+}
+.niche-design .bgm-yellow {
+    background-color: #f1c40f;
+}
+.niche-design .bgm-purple {
+    background-color: #9b58b5;
+}
+.niche-design .bgm-blue {
+    background-color: #3398de;
+}
+.niche-design .bgm-darkblue {
+    background-color: #34495e;
+}
+.niche-design .location-map-info {
+    width: 100%;
+    margin-top: 30px;
+}
+.niche-design .location-map-info th {
+    border-bottom: 1px solid #bdc2c8;
+    font-size: 24px;
+}
+.niche-design .location-map-info td,  .niche-design .location-map-info th {
+    padding: 4px;
+    text-align: left;
+    text-align: center;
+}
+.niche-design .location-map-info td span {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    margin-right: 10px;
+    margin-bottom: -2px;
+}
+.niche-design hr {
+    background-color: #bdc2c8;
+    height: 1px;
+    border: none;
+    margin: 30px 0;
+}
+.niche-design .add-input {
+    display: none;
+    margin-top: 20px;
+}
+.niche-design .add-input.open {
+    display: block;
+}
+.niche-design .editable-input {
+    position: relative;
+    margin-bottom: -3px;
+}
+.niche-design .editable-input .edit-group {
+    display: none;
+    margin-bottom: 15px;
+}
+.niche-design .editable-input .edit-group.open {
+    display: block;
+}
+.niche-design .editable-input .edit-group input {
+    margin-top: 5px;
+}
+.niche-design .editable-input > .options {
+    position: absolute;
+    top: 18px;
+    right: 15px;
+}
+.niche-design .editable-input > .options {
+    font-size: 0;
+}
+.niche-design .editable-input > .options li {
+    display: inline-block;
+    margin-left: 5px;
+}
+.niche-design .editable-input > .options li a {
+    color: #bdc2c8;
+}
+.niche-design .editable-input > .options li i {
+    font-size: 16px;
+}
+.niche-design .editable-input > .options li a.edit:hover {
+    color: #2e98cc;
+}
+.niche-design .editable-input > .options li a.delete:hover {
+    color: #e84c3d;
+}
+.niche-design .niches {
+    display: none;
+}
+.niche-design .niches img {
+    margin: 20px auto;
+    display: block;
+}
+.niche-design .pick-niche-button-block .btn-niche {
+    color: #2c3e50;
+    border: 1px solid #eef3f5;
+    background-image: none;
+    box-shadow: none;
+    font-size:20px;
+    font-weight: normal;
+}
+.niche-design .pick-niche-button-block .btn-niche:hover {
+    background-color: #eef3f5 !important;
+    background-image: none;
+}
+.niche-design .pick-niche-button-block .btn-niche:active {
+    -webkit-box-shadow: inset 2px 2px 5px 2px rgba(0, 0, 0, 0.25);
+    -moz-box-shadow: inset 2px 2px 5px 2px rgba(0, 0, 0, 0.25);
+    box-shadow: inset 2px 2px 5px 2px rgba(0, 0, 0, 0.25);
+}
+.blue-bg {
+    background-color: #337DE8 !important;
+}
+.page-content-wrapper.frontend-progress-bar {
+    display: none;
+}
+.sticky-green {
+    align-items: center;
+    background-color: #dff0d8;
+    border: 1px solid #d5e5ce;
+    color: #468847;
+    display: flex;
+    height: 70px;
+    justify-content: center;
+    line-height: 70px;
+    margin-bottom: 25px;
+    margin-right: 20px;
+    position: relative;
+    text-align: center
+}
+.sticky-green .close {
+    color: #468847;
+    font-size: 14px;
+    opacity: 1;
+    position: absolute;
+    right: 8px;
+    top: 8px
+}

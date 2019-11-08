@@ -1,0 +1,12 @@
+name: CKEditor Upload Image
+type: module
+description: Integrates CKEditor's Upload Image plugin to Drupal.
+package: User interface
+dependencies:
+  - ckeditor
+# core: 8.x
+# Information added by Drupal.org packaging script on 2017-12-13
+version: '8.x-1.5'
+core: '8.x'
+project: 'ckeditor_uploadimage'
+datestamp: 1513138391

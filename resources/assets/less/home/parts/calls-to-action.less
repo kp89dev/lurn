@@ -1,0 +1,198 @@
+/* --------------------------------------------------------------
+ *
+ * Call to action section.
+ * 
+ * --------------------------------------------------------------
+ */
+.call-to-action {
+  background: @link-active-color;
+  padding: @more-spacing @more-spacing * 3;
+
+  .grid {
+    padding: @padding @more-spacing;
+  }
+
+  h3 {
+    color: #fff;
+    font-size: 2.4rem;
+    font-weight: 800;
+    
+    a {
+        color: #fff;
+        text-decoration: underline;
+        
+        &:hover {
+            color: #1e70bf;
+        }
+    }
+  }
+
+  input {
+    background: none;
+    border: 0;
+    border-bottom: 1px solid #fff;
+    color: #fff;
+    outline: none;
+    padding: 1.15rem;
+    width: 100%;
+
+    &::-webkit-input-placeholder { color: rgba(255, 255, 255, 0.5); opacity: 1; }
+    &:-moz-placeholder           { color: rgba(255, 255, 255, 0.5); opacity: 1; }
+    &::-moz-placeholder          { color: rgba(255, 255, 255, 0.5); opacity: 1; }
+    &:-ms-input-placeholder      { color: rgba(255, 255, 255, 0.5); opacity: 1; }
+    &::-ms-input-placeholder     { color: rgba(255, 255, 255, 0.5); opacity: 1; }
+    &::placeholder               { color: rgba(255, 255, 255, 0.5); opacity: 1; }
+  }
+  
+    @media (max-width: 1620px) {
+        padding: @more-spacing @more-spacing * 2;
+        .grid {
+            padding: @padding @spacing;
+            .column{
+                &:first-of-type{
+                    padding-left: 0;
+                }
+                &:last-of-type{
+                    padding-right: 0;
+                }
+            }
+        }
+    }
+    @media (max-width: 1420px) {
+        .grid {
+            padding: @padding; 
+        }   
+    }
+
+  @media (max-width: 1366px) and (min-width: 415px) {
+    padding: @more-spacing;
+    
+    .grid {
+        padding: @padding @more-spacing;
+    }
+    
+    .eight.wide.column {
+      width: 100% !important;
+      text-align: center;
+    }
+
+    .five.wide.column {
+      width: 60% !important;
+    }
+
+    .three.wide.column {
+      width: 40% !important;
+    }
+  }
+
+  @media (max-width: 768px) {
+    padding: @more-spacing @spacing;
+    .grid {
+        padding: @padding @spacing;
+    }
+  }
+  
+  @media (max-width: 698px) {
+    padding: @more-spacing @padding;
+    .grid {
+        padding: @padding;
+    }
+  }
+  
+  @media (max-width: 635px) {
+    padding: @more-spacing @padding;
+    .grid {
+        padding: 0;
+    }
+    
+    h3 span {
+        display: block;
+    }
+  }
+
+  @media (max-width: 414px) {
+    padding: @spacing @padding;
+
+    h3 {
+      font-size: 1.8rem;
+      text-align: center;
+    }
+
+    .grid {
+      padding: @spacing 0;
+    }
+
+    .six.wide.column,
+    .two.wide.column {
+      padding: 0 @spacing;
+    }
+  }
+}
+#form-modal {
+    .close{
+        background: #ff0000;
+        border: 2pt solid white;
+        -webkit-border-radius: 18pt;
+        -moz-border-radius: 18pt;
+        border-radius: 18pt;
+        line-height: 10px;
+        right: 1rem;
+        opacity: 1;
+    }
+    
+    .wufoo {
+        color: @primary-text-color;
+        padding: 30px 30px 20px;
+        margin: auto auto 14px;
+        background: #FFF;
+        border-radius: 15px;
+        font-size: 1.4rem;
+        
+  
+        .clear {
+            clear: both;
+            display: block;
+            overflow: hidden;
+            visibility: hidden;
+            width: 0;
+            height: 0;
+        }
+        
+        .row1 {
+            margin-bottom: 10px;
+        }
+
+        .row2 {
+            margin: 0 0 10px 35.5%;
+        }
+        .row1L {
+            float: left;
+            width: 33%;
+            text-align: right;
+        }
+
+        .row1R {
+            float: left;
+            width: 43%;
+            margin-left: 20px;
+        }
+        
+        .input1 {
+            width: 100%;
+            height: 29px;
+            background: #f3f3f3;
+            border: solid 1px #ccc;
+            color: #bbb;
+            padding: 0 8px;
+        }
+
+        .textarea1 {
+            width: 100%;
+            height: 100px;
+            background: #f3f3f3;
+            border: solid 1px #ccc;
+            color: #bbb;
+            padding: 8px;
+        }
+    }
+}

@@ -1,0 +1,7 @@
+floating_block.admin_settings:
+  path: '/admin/config/user-interface/floating-block'
+  defaults:
+    _form: '\Drupal\floating_block\Form\SettingsForm'
+    _title: 'Floating block'
+  requirements:
+    _permission: 'administer site configuration'

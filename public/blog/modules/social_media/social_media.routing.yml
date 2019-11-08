@@ -1,0 +1,17 @@
+social_media.admin_form:
+  path: '/admin/config/services/social-media'
+  defaults:
+    _form: '\Drupal\social_media\Form\SocialMediaAdminForm'
+    _title: 'Social media settings'
+  requirements:
+    _permission: 'administer site configuration'
+  options:
+    _admin_route: TRUE
+
+social_media.forward:
+  path: '/social-media-forward'
+  defaults:
+    _form: '\Drupal\social_media\Form\ForwardEmailForm'
+    _title: 'Forward email'
+  requirements:
+   _access: 'TRUE'

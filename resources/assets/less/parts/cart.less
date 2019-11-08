@@ -1,0 +1,219 @@
+#cart-item {
+  width: 100%;
+  box-shadow: 0 2px 3px -2px rgba(0, 0, 0, .15);
+
+  th {
+    padding: 10px @padding;
+    font-size: 18px;
+    text-align: center;
+    color: #999;
+    font-weight: normal;
+
+    &:first-child {
+      text-align: left;
+    }
+  }
+
+  td {
+    vertical-align: middle;
+  }
+
+  .image {
+    width: 180px;
+
+    img {
+      display: block;
+    }
+  }
+
+  .info {
+    td {
+      background-color: #fff;
+    }
+  }
+
+  .title {
+    padding: 0 @spacing;
+
+    h2 {
+      margin: 0 0 5px;
+    }
+
+    p {
+      margin: 0;
+    }
+  }
+
+  .payment-type {
+    width: 180px;
+
+    > div {
+      zoom: 1.1;
+    }
+
+    label {
+      margin: 5px 0;
+
+      > span {
+        font-size: 13px;
+        color: #888;
+      }
+    }
+  }
+
+  .course-price {
+    background-color: #fbfbfb !important;
+    font-size: 20px;
+    font-weight: normal;
+    text-align: center;
+    width: 180px;
+  }
+}
+
+#add-new-card {
+  h3 {
+    margin-bottom: 0;
+  }
+}
+
+.credit-cards {
+  user-select: none;
+
+  h3 {
+    margin-bottom: 0;
+  }
+
+  &.faded {
+    .credit-card {
+      opacity: .3;
+    }
+  }
+
+  .credit-card {
+    background-color: #fff;
+    padding: @padding @padding @padding 80px;
+    margin-bottom: @padding;
+    border-radius: 3px;
+    position: relative;
+    border: 1px solid #eee;
+    cursor: pointer;
+    transition: all .25s;
+
+    &:hover {
+      background-color: #fafafa;
+    }
+
+    > i.plus,
+    > i.check,
+    > i.type.icon {
+      position: absolute;
+      top: 26px;
+      font-size: 32px;
+    }
+
+    > i.check {
+      opacity: 0;
+      right: @padding;
+      transition: all .25s;
+    }
+
+    > i.plus,
+    > i.type.icon {
+      color: #aaa;
+      left: @padding;
+    }
+
+    &.selected {
+      border: 2px solid #75aefd;
+      margin: -1px -1px 14px -1px;
+      background-color: #fff;
+
+      i.check {
+        opacity: 1;
+      }
+
+      i.icon {
+        color: #75aefd;
+      }
+    }
+
+    &.add-new {
+      padding: (@padding + 3) @padding;
+      text-align: center;
+      font-size: 16px;
+
+      i.icon {
+        top: 20px;
+      }
+    }
+
+    input {
+      display: none;
+    }
+
+    .name {
+      font-size: 18px;
+    }
+
+    .meta {
+      background: none;
+      color: #888;
+
+      .faded {
+        color: #ccc;
+        font-size: 12px;
+        letter-spacing: 2px;
+        margin-right: 3px;
+      }
+
+      > span {
+        display: inline-block;
+        margin-right: @padding;
+      }
+    }
+  }
+}
+
+#add-new-card {
+  opacity: 0;
+  transition: all .25s;
+
+  &.visible {
+    opacity: 1;
+  }
+}
+
+.jp-card.jp-card .jp-card-front .jp-card-lower .jp-card-name {
+  font-size: 17px;
+}
+
+.related-courses {
+  width: auto;
+  min-width: 50%;
+
+  tr {
+    box-shadow: 0 2px 3px -2px rgba(0, 0, 0, .15);
+  }
+
+  td {
+    background-color: #fff;
+    vertical-align: middle;
+    padding: 10px;
+    border-top: 3px solid #f7f8fa;
+    transition: all .2s;
+
+    &:first-child {
+      width: 120px;
+      padding: 0;
+
+      img {
+        display: block;
+      }
+    }
+
+    &:last-child {
+      background-color: #fbfbfb;
+      text-align: center;
+    }
+  }
+}

@@ -1,0 +1,49 @@
+ul.notes {
+  margin: 0;
+  padding: 0;
+  font-family: Pangolin, cursive;
+
+  li {
+    display: block;
+    margin: @padding 0;
+    border: 1px solid #f5e4c7;
+    border-radius: 4px;
+    overflow: hidden;
+
+    .ui.label {
+      background: none;
+      color: #c5a670;
+      padding: 5px;
+      font-size: 13px;
+      font-weight: normal;
+      text-transform: uppercase;
+      position: relative;
+      top: -1px;
+
+      &:first-child {
+        padding-right: 0;
+      }
+    }
+
+    a {
+      color: #b7965d;
+      transition: all .25s;
+      box-shadow: none !important;
+
+      &:hover {
+        color: #946f2f;
+      }
+    }
+
+    .lesson {
+      background-color: #fff1da;
+      padding: 5px 10px 2px 5px;
+    }
+
+    .note {
+      background-color: #fff6e7;
+      padding: @padding;
+      color: #61430d;
+    }
+  }
+}
